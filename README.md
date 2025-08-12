@@ -26,3 +26,9 @@ I have analyzed the Flight Management Company backend project requirements and c
 - Added clear verbs to describe the relationships.
 
 - This helps bridge the gap between technical schema and business understanding.
+
+#### 5. ERD Drafting
+
+- Created an initial ERD diagram mapping entities and relationships.
+
+- Planned improvements to enhance clarity with relationship verbs on connectors.
