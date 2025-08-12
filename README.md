@@ -231,3 +231,7 @@ Ticket
 | 6003      | 8003     | MCT003    | 23.00    |
 
 3NF – (Already 3NF). 
+
+## Schema Diagram 
+
+![FlightManagementSystem Schema](./images/FMS-Schema.drawio.png)
