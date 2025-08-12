@@ -41,3 +41,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - An Airport serves as destination for many Routes.
 
+#### Route/ Flight
+
+- A Route includes many Flights.
+
