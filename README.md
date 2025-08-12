@@ -94,6 +94,6 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2         | SLL  | Salalah International Airport | Salalah | Oman    | Asia/Muscat |
 | 3         | DXB  | Dubai International Airport   | Dubai   | UAE     | Asia/Dubai  |
 
-
+3NF – (Already 3NF; no transitive deps).
 
 
