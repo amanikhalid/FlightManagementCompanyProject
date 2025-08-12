@@ -183,3 +183,4 @@ Aircraft (references ModelID)
 | 9001        | Farid Al‑Alawi | OM1234567  | Oman        | 1999‑09‑02 |
 | 9002        | Amani Al‑Hinai | OM7654321  | Oman        | 2000‑05‑14 |
 
+3NF – (Already 3NF).
