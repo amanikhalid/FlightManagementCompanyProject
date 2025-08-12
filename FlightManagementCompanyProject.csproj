@@ -10,6 +10,7 @@
   <ItemGroup>
     <Folder Include="images\" />
     <Folder Include="Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
