@@ -67,5 +67,9 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - A Passenger makes many Bookings.
 
+#### Booking/ Ticket
+
+- A Booking contains many Tickets.
+
 
 
