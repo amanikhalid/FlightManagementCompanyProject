@@ -76,6 +76,17 @@ I have analyzed the Flight Management Company backend project requirements and c
 - A Ticket includes many pieces of Baggage.
 
 
+## Normalization 
+#### 1) Airport
+1NF – Unnormalized (combined “Location”)
+
+| AirportID | IATA | AirportName                   | Location      | TimeZone    |
+| --------- | ---- | ----------------------------- | ------------- | ----------- |
+| 1         | MCT  | Muscat International Airport  | Muscat, Oman  | Asia/Muscat |
+| 2         | SLL  | Salalah International Airport | Salalah, Oman | Asia/Muscat |
+| 3         | DXB  | Dubai International Airport   | Dubai, UAE    | Asia/Dubai  |
+
+
 
 
 
