@@ -113,6 +113,15 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 3NF – (Already 3NF).
 
+#### 3) Aircraft
+
+1NF – Unnormalized 
+
+| AircraftID | TailNumber | ModelCapacity          |
+| ---------- | ---------- | ---------------------- |
+| 101        | A4O-BA     | B737-800 / 162 seats   |
+| 102        | A4O-BB     | B737 MAX 8 / 174 seats |
+| 103        | A4O-CA     | B787-9 / 288 seats     |
 
 
 
