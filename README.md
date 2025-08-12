@@ -139,4 +139,11 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2       | B737 MAX 8 | Boeing       | 174             |
 | 3       | B787-9     | Boeing       | 280–296         |
 
+Aircraft (references ModelID)
+
+| AircraftID | TailNumber | ModelID |
+| ---------- | ---------- | ------- |
+| 101        | A4O-BA     | 1       |
+| 102        | A4O-BB     | 2       |
+| 103        | A4O-CA     | 3       |
 
