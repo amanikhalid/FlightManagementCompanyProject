@@ -34,3 +34,10 @@ I have analyzed the Flight Management Company backend project requirements and c
 - Planned improvements to enhance clarity with relationship verbs on connectors.
 
 ![FlightManagementSystem ERD](./images/FMS-ERD.drawio.png)
+
+#### Airport/ Route 
+
+- An Airport serves as origin for many Routes.
+
+- An Airport serves as destination for many Routes.
+
