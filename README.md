@@ -63,3 +63,9 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - A CrewMember works on many Flights.
 
+#### Passenger/ Booking
+
+- A Passenger makes many Bookings.
+
+
+
