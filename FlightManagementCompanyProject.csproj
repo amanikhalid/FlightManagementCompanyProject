@@ -11,6 +11,7 @@
     <Folder Include="images\" />
     <Folder Include="Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Service\" />
     <Folder Include="Repository\" />
   </ItemGroup>
 
