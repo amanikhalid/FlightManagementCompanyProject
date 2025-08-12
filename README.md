@@ -71,5 +71,11 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - A Booking contains many Tickets.
 
+#### Ticket/ Baggage
+
+- A Ticket includes many pieces of Baggage.
+
+
+
 
 
