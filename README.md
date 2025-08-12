@@ -20,3 +20,9 @@ I have analyzed the Flight Management Company backend project requirements and c
 - Defined how entities are connected, ensuring referential integrity.
 
 - Mapped every connection between entities based on the business model.
+
+#### 4. Relationship Verbs (Business Meaning)
+
+- Added clear verbs to describe the relationships.
+
+- This helps bridge the gap between technical schema and business understanding.
