@@ -123,5 +123,12 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 102        | A4O-BB     | B737 MAX 8 / 174 seats |
 | 103        | A4O-CA     | B787-9 / 288 seats     |
 
+2NF 
+
+| AircraftID | TailNumber | Model      | Capacity |
+| ---------- | ---------- | ---------- | -------- |
+| 101        | A4O-BA     | B737-800   | 162      |
+| 102        | A4O-BB     | B737 MAX 8 | 174      |
+| 103        | A4O-CA     | B787-9     | 288      |
 
 
