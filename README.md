@@ -166,3 +166,13 @@ Aircraft (references ModelID)
 
 
 3NF – (Already 3NF).
+
+#### 5) Passenger 
+
+1NF – Unnormalized
+
+| PassengerID | FullName       | Passport (Nat/No) | BirthInfo         |
+| ----------- | -------------- | ----------------- | ----------------- |
+| 9001        | Farid Al‑Alawi | OM / OM1234567    | Oman / 1999‑09‑02 |
+| 9002        | Amani Al‑Hinai | OM / OM7654321    | Oman / 2000‑05‑14 |
+
