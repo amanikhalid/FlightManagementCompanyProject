@@ -212,3 +212,12 @@ Ticket
 | 8003     | 7002      | 5002     | 14C        | 65.00 | 0         |
 
 3NF – (Already 3NF).
+
+#### 7) Baggage
+
+1NF – Unnormalized
+
+| TicketID | Baggage (tags/weights)   |
+| -------- | ------------------------ |
+| 8001     | MCT001/18.5, MCT002/10.2 |
+| 8003     | MCT003/23.0              |
