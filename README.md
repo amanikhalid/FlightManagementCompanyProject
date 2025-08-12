@@ -131,4 +131,12 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 102        | A4O-BB     | B737 MAX 8 | 174      |
 | 103        | A4O-CA     | B787-9     | 288      |
 
+3NF – Remove transitive dependency
+
+| ModelID | Model      | Manufacturer | TypicalCapacity |
+| ------- | ---------- | ------------ | --------------- |
+| 1       | B737-800   | Boeing       | 162             |
+| 2       | B737 MAX 8 | Boeing       | 174             |
+| 3       | B787-9     | Boeing       | 280–296         |
+
 
