@@ -194,3 +194,11 @@ Aircraft (references ModelID)
 | OM‑FM101‑001 | Farid     | FM101        | 12A, 12B | Confirmed |     90.00 |
 | OM‑FM102‑002 | Farid     | FM102        | 14C      | Confirmed |     65.00 |
 
+2NF
+
+Booking
+
+| BookingID | BookingRef   | PassengerID | BookingDate         | Status    |
+| --------- | ------------ | ----------- | ------------------- | --------- |
+| 7001      | OM‑FM101‑001 | 9001        | 2025‑08‑12 08:00:00 | Confirmed |
+| 7002      | OM‑FM102‑002 | 9001        | 2025‑08‑12 08:05:00 | Confirmed |
