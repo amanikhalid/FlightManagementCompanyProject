@@ -86,6 +86,13 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2         | SLL  | Salalah International Airport | Salalah, Oman | Asia/Muscat |
 | 3         | DXB  | Dubai International Airport   | Dubai, UAE    | Asia/Dubai  |
 
+2NF – Split Location 
+
+| AirportID | IATA | AirportName                   | City    | Country | TimeZone    |
+| --------- | ---- | ----------------------------- | ------- | ------- | ----------- |
+| 1         | MCT  | Muscat International Airport  | Muscat  | Oman    | Asia/Muscat |
+| 2         | SLL  | Salalah International Airport | Salalah | Oman    | Asia/Muscat |
+| 3         | DXB  | Dubai International Airport   | Dubai   | UAE     | Asia/Dubai  |
 
 
 
