@@ -94,7 +94,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2         | SLL  | Salalah International Airport | Salalah | Oman    | Asia/Muscat |
 | 3         | DXB  | Dubai International Airport   | Dubai   | UAE     | Asia/Dubai  |
 
-3NF – (Already 3NF; no transitive deps).
+3NF – (Already 3NF).
 
 #### 2) Route
 1NF – Unnormalized
@@ -111,7 +111,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 10      | MCT        | SLL      | 870        |
 | 11      | MCT        | DXB      | 340        |
 
-
+3NF – (Already 3NF).
 
 
 
