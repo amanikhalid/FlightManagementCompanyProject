@@ -184,3 +184,13 @@ Aircraft (references ModelID)
 | 9002        | Amani Al‑Hinai | OM7654321  | Oman        | 2000‑05‑14 |
 
 3NF – (Already 3NF).
+
+#### 6) Booking
+
+1NF – Unnormalized
+
+| BookingRef   | Passenger | FlightNumber | Seats    | Status    | FareTotal |
+| ------------ | --------- | ------------ | -------- | --------- | --------: |
+| OM‑FM101‑001 | Farid     | FM101        | 12A, 12B | Confirmed |     90.00 |
+| OM‑FM102‑002 | Farid     | FM102        | 14C      | Confirmed |     65.00 |
+
