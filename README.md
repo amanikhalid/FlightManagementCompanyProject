@@ -1,4 +1,4 @@
-# FlightManagementCompanyProject
+Ôªø# FlightManagementCompanyProject
 
 ## Project Progress Summary
 I have analyzed the Flight Management Company backend project requirements and clarified the database structure using an Entity Relationship Diagram.
@@ -78,7 +78,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 ## Normalization 
 #### 1) Airport
-1NF ñ Unnormalized (combined ìLocationî)
+1NF ‚Äì Unnormalized (combined ‚ÄúLocation‚Äù)
 
 | AirportID | IATA | AirportName                   | Location      | TimeZone    |
 | --------- | ---- | ----------------------------- | ------------- | ----------- |
@@ -86,7 +86,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2         | SLL  | Salalah International Airport | Salalah, Oman | Asia/Muscat |
 | 3         | DXB  | Dubai International Airport   | Dubai, UAE    | Asia/Dubai  |
 
-2NF ñ Split Location 
+2NF ‚Äì Split Location 
 
 | AirportID | IATA | AirportName                   | City    | Country | TimeZone    |
 | --------- | ---- | ----------------------------- | ------- | ------- | ----------- |
@@ -94,28 +94,28 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 2         | SLL  | Salalah International Airport | Salalah | Oman    | Asia/Muscat |
 | 3         | DXB  | Dubai International Airport   | Dubai   | UAE     | Asia/Dubai  |
 
-3NF ñ (Already 3NF).
+3NF ‚Äì (Already 3NF).
 
 #### 2) Route
-1NF ñ Unnormalized
+1NF ‚Äì Unnormalized
 
 | RouteID | Airports | Distance |
 | ------- | -------- | -------- |
-| 10      | MCTñSLL  | \~870 km |
-| 11      | MCTñDXB  | \~340 km |
+| 10      | MCT‚ÄìSLL  | \~870 km |
+| 11      | MCT‚ÄìDXB  | \~340 km |
 
-2NF ñ Split Airports
+2NF ‚Äì Split Airports
 
 | RouteID | OriginIATA | DestIATA | DistanceKm |
 | ------- | ---------- | -------- | ---------- |
 | 10      | MCT        | SLL      | 870        |
 | 11      | MCT        | DXB      | 340        |
 
-3NF ñ (Already 3NF).
+3NF ‚Äì (Already 3NF).
 
 #### 3) Aircraft
 
-1NF ñ Unnormalized 
+1NF ‚Äì Unnormalized 
 
 | AircraftID | TailNumber | ModelCapacity          |
 | ---------- | ---------- | ---------------------- |
@@ -131,13 +131,13 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 102        | A4O-BB     | B737 MAX 8 | 174      |
 | 103        | A4O-CA     | B787-9     | 288      |
 
-3NF ñ Remove transitive dependency
+3NF ‚Äì Remove transitive dependency
 
 | ModelID | Model      | Manufacturer | TypicalCapacity |
 | ------- | ---------- | ------------ | --------------- |
 | 1       | B737-800   | Boeing       | 162             |
 | 2       | B737 MAX 8 | Boeing       | 174             |
-| 3       | B787-9     | Boeing       | 280ñ296         |
+| 3       | B787-9     | Boeing       | 280‚Äì296         |
 
 Aircraft (references ModelID)
 
@@ -147,3 +147,11 @@ Aircraft (references ModelID)
 | 102        | A4O-BB     | 2       |
 | 103        | A4O-CA     | 3       |
 
+#### 4) Flight
+
+1NF ‚Äì Unnormalized
+
+| FlightID | FlightNumber | Times (UTC)                  | Route   | Status    | AircraftTail |
+| -------- | ------------ | ---------------------------- | ------- | --------- | ------------ |
+| 5001     | FM101        | Dep 2025‚Äë08‚Äë20 04:00 ‚Üí 05:10 | MCT‚ÄìDXB | Scheduled | A4O-BA       |
+| 5002     | FM102        | Dep 2025‚Äë08‚Äë21 06:00 ‚Üí 07:30 | MCT‚ÄìSLL | Scheduled | A4O-BB       |
