@@ -104,6 +104,12 @@ I have analyzed the Flight Management Company backend project requirements and c
 | 10      | MCT–SLL  | \~870 km |
 | 11      | MCT–DXB  | \~340 km |
 
+2NF – Split Airports
+
+| RouteID | OriginIATA | DestIATA | DistanceKm |
+| ------- | ---------- | -------- | ---------- |
+| 10      | MCT        | SLL      | 870        |
+| 11      | MCT        | DXB      | 340        |
 
 
 
