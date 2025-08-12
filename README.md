@@ -33,3 +33,4 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - Planned improvements to enhance clarity with relationship verbs on connectors.
 
+![FlightManagementSystem ERD](./images/FMS-ERD.drawio.png)
