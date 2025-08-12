@@ -45,3 +45,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - A Route includes many Flights.
 
+#### Aircraft/ Flight
+
+- An Aircraft operates many Flights.
+
