@@ -57,3 +57,9 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - A Flight issues many Tickets.
 
+#### Flight/ CrewMember (via FlightCrew)
+
+- A Flight is staffed by many CrewMembers.
+
+- A CrewMember works on many Flights.
+
