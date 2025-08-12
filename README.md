@@ -53,3 +53,7 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 - An Aircraft undergoes many Maintenance events.
 
+#### Flight/ Ticket
+
+- A Flight issues many Tickets.
+
