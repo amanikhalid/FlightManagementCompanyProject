@@ -96,4 +96,17 @@ I have analyzed the Flight Management Company backend project requirements and c
 
 3NF – (Already 3NF; no transitive deps).
 
+#### 2) Route
+1NF – Unnormalized
+
+| RouteID | Airports | Distance |
+| ------- | -------- | -------- |
+| 10      | MCT–SLL  | \~870 km |
+| 11      | MCT–DXB  | \~340 km |
+
+
+
+
+
+
 
