@@ -12,5 +12,7 @@ namespace FlightManagementCompanyProject.Data
     {
         public DbSet<Aircraft> Aircrafts { get; set; } // DbSet for Aircraft entities
         public DbSet<AircraftMaintenance> AircraftMaintenances { get; set; } // DbSet for AircraftMaintenance entities
+
+        public DbSet<Airport> Airports { get; set; } // DbSet for Airport entities
     }
 }
