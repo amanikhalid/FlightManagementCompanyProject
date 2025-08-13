@@ -316,7 +316,8 @@ namespace FlightManagementCompanyProject.Data
 
             // AircraftMaintenance Entity Configuration
             modelBuilder.Entity<AircraftMaintenance>()
-                
+                .HasKey(am => am.MaintenanceId); // Set MaintenanceId as the primary key
+
 
 
 
