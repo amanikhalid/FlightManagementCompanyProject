@@ -11,5 +11,7 @@ namespace FlightManagementCompanyProject.Models
         public int BookingId { get; set; } // Unique identifier for the booking 
 
         public string BookingRef { get; set; } // Reference number for the booking
+
+        public DateTime BookingDate { get; set; } // Date when the booking was made
     }
 }
