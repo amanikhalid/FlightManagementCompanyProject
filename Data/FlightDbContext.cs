@@ -148,6 +148,9 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Configure FlightId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
 
+            // FlightNumber configuration
+            modelBuilder.Entity<Flight>() 
+
 
 
 
