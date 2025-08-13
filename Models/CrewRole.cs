@@ -9,5 +9,6 @@ namespace FlightManagementCompanyProject.Models
     public enum CrewRole // Enum to represent different roles in the flight crew
     {
         pilot, // Pilot role
+        coPilot, // Co-pilot role
     }
 }
