@@ -344,6 +344,11 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(500) // Maximum length of 500 characters
                 .HasColumnType("nvarchar(500)"); // Specify the column type as nvarchar(500)
 
+            // Navigation properties for AircraftMaintenance
+            // one-to-many relationship with Aircraft
+            modelBuilder.Entity<AircraftMaintenance>()
+                
+
 
 
 
