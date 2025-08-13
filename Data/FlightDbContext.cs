@@ -302,7 +302,9 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for Aircraft
             // one-to-many relationship with Flight
             modelBuilder.Entity<Aircraft>()
-               
+                .HasMany(a => a.Flights) // An aircraft can have many flights
+                
+
 
 
 
