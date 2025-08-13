@@ -388,6 +388,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(50) // Maximum length of 50 characters
                 .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
 
+            // DOB configuration
+            modelBuilder.Entity<Passenger>()
+                
+
 
 
 
