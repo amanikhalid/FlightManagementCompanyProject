@@ -11,5 +11,7 @@ namespace FlightManagementCompanyProject.Models
         public int AirportId { get; set; } // Unique identifier for the airport
 
         public string IATA { get; set; } // IATA code of the airport
+
+        public string City { get; set; } // City where the airport is located
     }
 }
