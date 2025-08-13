@@ -11,5 +11,7 @@ namespace FlightManagementCompanyProject.Models
       public int PassengerId { get; set; } // Unique identifier for the passenger
 
         public string FullName { get; set; } // Full name of the passenger
+
+        public string PassportNo { get; set; } // Passport number of the passenger
     }
 }
