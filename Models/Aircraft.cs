@@ -8,5 +8,6 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Aircraft
     {
+        public int AircraftId { get; set; } // Unique identifier for the aircraft
     }
 }
