@@ -9,5 +9,7 @@ namespace FlightManagementCompanyProject.Models
     public class AircraftMaintenance
     {
         public int MaintenanceId { get; set; } // Unique identifier for the maintenance record
+
+        public DateTime MaintenanceDate { get; set; } // Date of the maintenance
     }
 }
