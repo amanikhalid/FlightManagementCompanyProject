@@ -31,5 +31,11 @@ namespace FlightManagementCompanyProject.Data
 
         public DbSet<Ticket> Tickets { get; set; } // DbSet for Ticket entities
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // Configure the database connection string 
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-73KN3D2;Initial Catalog=FlightManagementSystemDB;Integrated Security=True;TrustServerCertificate=True");
+        }
+
     }
 }
