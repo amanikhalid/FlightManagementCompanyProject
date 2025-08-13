@@ -350,6 +350,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasOne(am => am.Aircraft) // Each maintenance record belongs to one aircraft
                 .WithMany(a => a.AircraftMaintenances) // An aircraft can have many maintenance records
                 .HasForeignKey(am => am.AircraftId) // Foreign key in AircraftMaintenance table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for aircraft maintenance records
 
 
 
