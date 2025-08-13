@@ -390,7 +390,10 @@ namespace FlightManagementCompanyProject.Data
 
             // DOB configuration
             modelBuilder.Entity<Passenger>()
+                .Property(p => p.DOB) // Date of birth is required
+                .IsRequired()
                 
+
 
 
 
