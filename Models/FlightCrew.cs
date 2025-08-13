@@ -13,5 +13,6 @@ namespace FlightManagementCompanyProject.Models
         // Navigation properties
         // one-to-many relationship with Flight
         public int FlightId { get; set; } // Foreign key to the Flight
+        public Flight Flight { get; set; } // Navigation property to the Flight
     }
 }
