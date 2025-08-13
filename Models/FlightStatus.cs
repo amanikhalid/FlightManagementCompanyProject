@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Models
 {
-    public class FlightStatus
+    public enum FlightStatus // Enum to represent the status of a flight
     {
     }
 }
