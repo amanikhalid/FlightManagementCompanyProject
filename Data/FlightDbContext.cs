@@ -432,6 +432,9 @@ namespace FlightManagementCompanyProject.Data
 
             // Status configuration
             modelBuilder.Entity<Booking>()
+                .Property(b => b.Status) // Status is required
+                .IsRequired()
+              
 
 
 
