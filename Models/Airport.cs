@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Models
         public string IATA { get; set; } // IATA code of the airport
 
         public string City { get; set; } // City where the airport is located
+
+        public string Country { get; set; } // Country where the airport is located
     }
 }
