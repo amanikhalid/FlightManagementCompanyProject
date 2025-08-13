@@ -424,6 +424,9 @@ namespace FlightManagementCompanyProject.Data
                 .HasIndex(b => b.BookingRef)
                 .IsUnique(); // Ensure that BookingRef is unique across all bookings
 
+            // BookingDate configuration
+            modelBuilder.Entity<Booking>()
+
 
 
 
