@@ -414,6 +414,9 @@ namespace FlightManagementCompanyProject.Data
 
             // BookingRef configuration
             modelBuilder.Entity<Booking>()
+                .Property(b => b.BookingRef) // Booking reference is required
+                .IsRequired()
+                
 
 
 
