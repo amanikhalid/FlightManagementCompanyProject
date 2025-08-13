@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Models
     {
         pilot, // Pilot role
         coPilot, // Co-pilot role
+        flightAttendant, // Flight attendant role
     }
 }
