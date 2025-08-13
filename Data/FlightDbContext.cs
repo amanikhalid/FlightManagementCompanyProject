@@ -149,7 +149,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasColumnType("int"); // Specify the column type as int
 
             // FlightNumber configuration
-            modelBuilder.Entity<Flight>() 
+            modelBuilder.Entity<Flight>()
+                .Property(f => f.FlightNumber) // Flight number is required
+
+
 
 
 
