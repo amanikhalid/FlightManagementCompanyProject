@@ -288,7 +288,10 @@ namespace FlightManagementCompanyProject.Data
 
             // Model configuration
             modelBuilder.Entity<Aircraft>()
+                .Property(a => a.Model) // Model is required
+                .IsRequired()
                 
+
 
 
 
