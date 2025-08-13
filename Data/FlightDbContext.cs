@@ -426,6 +426,9 @@ namespace FlightManagementCompanyProject.Data
 
             // BookingDate configuration
             modelBuilder.Entity<Booking>()
+                .Property(b => b.BookingDate) // Booking date is required
+                .IsRequired()
+               
 
 
 
