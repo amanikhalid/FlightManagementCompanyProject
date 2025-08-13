@@ -328,7 +328,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<AircraftMaintenance>()
                 .Property(am => am.MaintenanceDate) // Maintenance date is required
                 .IsRequired()
-                
+                .HasColumnType("datetime"); // Specify the column type as datetime
+
 
 
 
