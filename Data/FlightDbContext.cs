@@ -381,6 +381,9 @@ namespace FlightManagementCompanyProject.Data
                 .HasIndex(p => p.PassportNo)
                 .IsUnique(); // Ensure that PassportNo is unique across all passengers
 
+            // Nationality configuration
+            modelBuilder.Entity<Passenger>()
+
 
 
 
