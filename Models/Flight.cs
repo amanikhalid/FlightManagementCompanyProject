@@ -14,5 +14,7 @@ namespace FlightManagementCompanyProject.Models
 
         public DateTime DepartureUtc { get; set; } // Scheduled departure time in UTC
 
+        public DateTime ArrivalUtc { get; set; } // Scheduled arrival time in UTC
+
     }
 }
