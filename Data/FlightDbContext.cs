@@ -394,6 +394,10 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("datetime"); // Specify the column type as datetime
 
+            // Navigation properties for Passenger
+            // one-to-many relationship with Booking
+            modelBuilder.Entity<Passenger>()
+
 
 
 
