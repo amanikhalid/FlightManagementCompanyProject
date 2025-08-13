@@ -8,5 +8,7 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Route
     {
+        public int RouteId { get; set; } // Unique identifier for the route
+        
     }
 }
