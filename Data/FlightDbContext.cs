@@ -268,6 +268,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .HasKey(a => a.AircraftId); // Set AircraftId as the primary key
 
+            // Aircraft auto-increment configuration
+            modelBuilder.Entity<Aircraft>()
+             
 
 
 
