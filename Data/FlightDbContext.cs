@@ -110,6 +110,12 @@ namespace FlightManagementCompanyProject.Data
                 .Property(r => r.RouteId)
                 .ValueGeneratedOnAdd() // Configure RouteId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
+
+            // DistanceKm configuration
+            modelBuilder.Entity<Route>()
+                .Property(r => r.DistanceKm)
+                .IsRequired() // DistanceKm is required
+                .HasColumnType("int"); // Specify the column type as int
         }
 
     }
