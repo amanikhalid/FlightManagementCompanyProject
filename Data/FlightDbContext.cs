@@ -416,7 +416,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .Property(b => b.BookingRef) // Booking reference is required
                 .IsRequired()
-                
+                .HasMaxLength(20) // Maximum length of 20 characters
+
+
 
 
 
