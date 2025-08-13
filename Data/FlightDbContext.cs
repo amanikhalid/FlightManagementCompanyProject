@@ -163,7 +163,9 @@ namespace FlightManagementCompanyProject.Data
             // DepartureUtc configuration
             modelBuilder.Entity<Flight>()
                 .Property(f => f.DepartureUtc) // Departure time is required
-               
+                .IsRequired() 
+
+
 
 
 
