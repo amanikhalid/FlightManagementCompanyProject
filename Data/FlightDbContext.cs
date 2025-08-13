@@ -358,7 +358,12 @@ namespace FlightManagementCompanyProject.Data
 
             // Passenger auto-increment configuration
             modelBuilder.Entity<Passenger>()
-               
+                .Property (p => p.PassengerId)
+                .ValueGeneratedOnAdd() // Auto-increment primary key
+
+
+
+
 
 
 
