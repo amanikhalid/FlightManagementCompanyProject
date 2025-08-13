@@ -12,5 +12,7 @@ namespace FlightManagementCompanyProject.Models
 
         public string FullName { get; set; } // Full name of the crew member
 
+        public string Role { get; set; } // Role of the crew member (e.g., pilot, flight attendant)
+
     }
 }
