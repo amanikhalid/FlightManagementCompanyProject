@@ -37,5 +37,12 @@ namespace FlightManagementCompanyProject.Data
             optionsBuilder.UseSqlServer("Data Source=DESKTOP-73KN3D2;Initial Catalog=FlightManagementSystemDB;Integrated Security=True;TrustServerCertificate=True");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Airport Entity Configuration
+            modelBuilder.Entity<Airport>()
+                .HasKey(a => a.AirportId); // Set AirportId as the primary key
+        }
+
     }
 }
