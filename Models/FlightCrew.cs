@@ -17,5 +17,7 @@ namespace FlightManagementCompanyProject.Models
 
         // one-to-many relationship with CrewMember
         public int CrewId { get; set; } // Foreign key to the CrewMember
+
+        public CrewMember CrewMember { get; set; } // Navigation property to the CrewMember
     }
 }
