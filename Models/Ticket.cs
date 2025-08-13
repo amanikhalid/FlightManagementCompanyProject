@@ -8,5 +8,7 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Ticket
     {
+        public int TicketId { get; set; } // Unique identifier for the ticket
+       
     }
 }
