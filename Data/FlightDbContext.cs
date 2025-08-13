@@ -342,6 +342,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(am => am.Notes) // Note is optional
                 .IsRequired()
                 .HasMaxLength(500) // Maximum length of 500 characters
+                .HasColumnType("nvarchar(500)"); // Specify the column type as nvarchar(500)
 
 
 
