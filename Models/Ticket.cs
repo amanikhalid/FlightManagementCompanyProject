@@ -10,6 +10,6 @@ namespace FlightManagementCompanyProject.Models
     {
         public int TicketId { get; set; } // Unique identifier for the ticket
        
-
+        public string SeatNumber { get; set; } // Seat number assigned to the ticket
     }
 }
