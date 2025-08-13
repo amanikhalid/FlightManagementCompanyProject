@@ -16,5 +16,8 @@ namespace FlightManagementCompanyProject.Models
         // one-to-many relationship with Flight
         public ICollection<Flight> Flights { get; set; } // Collection of flights associated with this route
 
+        // one-to-many relationship with Airport
+        public int OriginAirportId { get; set; } // Foreign key to the origin Airport
+
     }
 }
