@@ -404,6 +404,7 @@ namespace FlightManagementCompanyProject.Data
 
             // Booking Entity Configuration
             modelBuilder.Entity<Booking>()
+                .HasKey(b => b.BookingId); // Set BookingId as the primary key
 
 
 
