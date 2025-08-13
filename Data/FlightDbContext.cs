@@ -364,6 +364,11 @@ namespace FlightManagementCompanyProject.Data
 
             // FullName configuration
             modelBuilder.Entity<Passenger>()
+                .Property(p => p.FullName) 
+                .IsRequired()
+                .HasMaxLength(50)
+                .HasColumnType("nvarchar(50)"); // string type with max length 50
+
 
 
 
