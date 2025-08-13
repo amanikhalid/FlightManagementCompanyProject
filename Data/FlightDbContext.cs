@@ -400,6 +400,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasMany(p => p.Bookings) // A passenger can have many bookings
                 .WithOne(b => b.Passenger) // Each booking belongs to one passenger
                 .HasForeignKey(b => b.PassengerId) // Foreign key in Booking table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for bookings
 
 
 
