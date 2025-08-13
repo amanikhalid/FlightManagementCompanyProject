@@ -334,7 +334,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<AircraftMaintenance>()
                 .Property(am => am.Type) // Type of maintenance is required
                 .IsRequired()
-                
+                .HasMaxLength(50) // Maximum length of 50 characters
+
+
 
 
 
