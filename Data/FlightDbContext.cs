@@ -392,7 +392,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Passenger>()
                 .Property(p => p.DOB) // Date of birth is required
                 .IsRequired()
-                
+                .HasColumnType("datetime"); // Specify the column type as datetime
+
+
 
 
 
