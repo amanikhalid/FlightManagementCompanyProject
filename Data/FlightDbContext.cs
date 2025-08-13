@@ -217,6 +217,10 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Ticket>()
                 .HasKey(t => t.TicketId); // Set TicketId as the primary key
 
+            // Ticket auto-increment configuration
+            modelBuilder.Entity<Ticket>()
+                .Property(t => t.TicketId)
+               
 
 
 
