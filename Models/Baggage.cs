@@ -12,6 +12,8 @@ namespace FlightManagementCompanyProject.Models
 
         public decimal WeightKg { get; set; } // Weight of the baggage in kilograms
 
+        public string TagNumber { get; set; } // Tag number for the baggage item
+
 
     }
 }
