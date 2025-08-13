@@ -242,6 +242,10 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("bit"); // Specify the column type as bit (boolean)
 
+            // Navigation properties for Ticket
+            // one-to-many relationship with Baggage
+            modelBuilder.Entity<Ticket>()
+
 
 
 
