@@ -11,5 +11,7 @@ namespace FlightManagementCompanyProject.Models
         public int MaintenanceId { get; set; } // Unique identifier for the maintenance record
 
         public DateTime MaintenanceDate { get; set; } // Date of the maintenance
+
+        public string Type { get; set; } // Type of maintenance (e.g., routine, emergency)
     }
 }
