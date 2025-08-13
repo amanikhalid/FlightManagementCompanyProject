@@ -24,5 +24,8 @@ namespace FlightManagementCompanyProject.Models
 
         // one-to-many relationship with FlightCrew
         public ICollection<FlightCrew> FlightCrews { get; set; } // Collection of flight crews assigned to this flight
+
+        // one-to-many relationship with Aircraft
+        public int AircraftId { get; set; } // Foreign key to the Aircraft
     }
 }
