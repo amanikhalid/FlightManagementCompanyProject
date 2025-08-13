@@ -406,8 +406,11 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .HasKey(b => b.BookingId); // Set BookingId as the primary key
 
-
-
+            // Booking auto-increment configuration
+            modelBuilder.Entity<Booking>()
+                .Property(b => b.BookingId)
+                .ValueGeneratedOnAdd() // Configure BookingId to be auto-incremented
+              
 
 
 
