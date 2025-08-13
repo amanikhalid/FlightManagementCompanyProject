@@ -10,6 +10,8 @@ namespace FlightManagementCompanyProject.Models
     {
         public int BaggageId { get; set; } // Unique identifier for the baggage item
 
+        public decimal WeightKg { get; set; } // Weight of the baggage in kilograms
+
 
     }
 }
