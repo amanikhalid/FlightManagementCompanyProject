@@ -278,7 +278,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .Property(a => a.TailNumber) // Tail number is required
                 .IsRequired()
-                
+                .HasColumnType("int"); // Specify the column type as int
+
 
 
 
