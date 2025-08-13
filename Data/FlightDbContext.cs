@@ -291,6 +291,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(a => a.Model) // Model is required
                 .IsRequired()
                 .HasMaxLength(50) // Maximum length of 50 characters
+                .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
 
 
 
