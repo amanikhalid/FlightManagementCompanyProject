@@ -332,7 +332,10 @@ namespace FlightManagementCompanyProject.Data
 
             // Type configuration
             modelBuilder.Entity<AircraftMaintenance>()
+                .Property(am => am.Type) // Type of maintenance is required
+                .IsRequired()
                 
+
 
 
 
