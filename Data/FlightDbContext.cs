@@ -295,7 +295,9 @@ namespace FlightManagementCompanyProject.Data
 
             // Capacity configuration
             modelBuilder.Entity<Aircraft>()
-               
+                .Property(a => a.Capacity) // Capacity is required
+                .IsRequired()
+                
 
 
 
