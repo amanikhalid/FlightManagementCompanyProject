@@ -46,8 +46,9 @@ namespace FlightManagementCompanyProject.Data
             // Airport auto-increment configuration
             modelBuilder.Entity<Airport>()
                 .Property(a => a.AirportId)
-                .ValueGeneratedOnAdd(); // Configure AirportId to be auto-incremented
-            
+                .ValueGeneratedOnAdd()// Configure AirportId to be auto-incremented
+            .HasColumnType("int"); // Specify the column type as int
+
         }
 
     }
