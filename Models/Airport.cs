@@ -19,5 +19,9 @@ namespace FlightManagementCompanyProject.Models
         public string Country { get; set; } // Country where the airport is located
 
         public string TimeZone { get; set; } // Time zone of the airport
+
+        // Navigation properties 
+        // one-to-many relationship with Route
+        public ICollection<Route> OriginRoutes { get; set; } // Routes originating from this airport 
     }
 }
