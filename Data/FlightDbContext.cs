@@ -356,6 +356,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Passenger>()
                 .HasKey(p => p.PassengerId); // Set PassengerId as the primary key
 
+            // Passenger auto-increment configuration
+            modelBuilder.Entity<Passenger>()
+               
 
 
 
