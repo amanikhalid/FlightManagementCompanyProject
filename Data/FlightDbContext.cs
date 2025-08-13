@@ -402,6 +402,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(b => b.PassengerId) // Foreign key in Booking table
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for bookings
 
+            // Booking Entity Configuration
+            modelBuilder.Entity<Booking>()
+
+
 
 
 
