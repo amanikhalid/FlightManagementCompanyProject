@@ -225,7 +225,9 @@ namespace FlightManagementCompanyProject.Data
 
             // SeatNumber configuration
             modelBuilder.Entity<Ticket>()
-                
+                property(t => t.SeatNumber) // Seat number is required
+
+
 
 
 
