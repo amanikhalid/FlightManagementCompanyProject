@@ -25,5 +25,7 @@ namespace FlightManagementCompanyProject.Data
 
         public DbSet<FlightCrew> FlightCrews { get; set; } // DbSet for FlightCrew entities
 
+        public DbSet<Passenger> Passengers { get; set; } // DbSet for Passenger entities
+
     }
 }
