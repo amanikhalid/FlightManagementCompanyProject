@@ -196,7 +196,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Flight>()
                 .HasMany(f => f.FlightCrews) // A flight can have many flight crews
                 .WithOne(fc => fc.Flight) // one flight 
-                    
+                 .HasForeignKey(fc => fc.FlightId) // Foreign key in FlightCrew
+                
+
 
 
 
