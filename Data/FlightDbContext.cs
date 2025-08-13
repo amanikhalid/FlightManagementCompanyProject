@@ -324,6 +324,9 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Configure MaintenanceId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
 
+            // MaintenanceDate configuration
+            modelBuilder.Entity<AircraftMaintenance>()
+               
 
 
 
