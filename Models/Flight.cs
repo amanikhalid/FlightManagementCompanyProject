@@ -16,5 +16,7 @@ namespace FlightManagementCompanyProject.Models
 
         public DateTime ArrivalUtc { get; set; } // Scheduled arrival time in UTC
 
+        public string Status { get; set; } // Status of the flight (e.g., scheduled, delayed, cancelled)
+
     }
 }
