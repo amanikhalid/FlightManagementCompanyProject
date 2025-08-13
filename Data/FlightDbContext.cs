@@ -182,6 +182,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(f => f.Status) // Status is required
                 .IsRequired()
                 .HasMaxLength(20) // Maximum length of 20 characters
+                .HasColumnType("nvarchar(20)"); // Specify the column type as nvarchar(20)
 
 
 
