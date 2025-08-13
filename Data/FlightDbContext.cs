@@ -339,8 +339,11 @@ namespace FlightManagementCompanyProject.Data
 
             // Note configuration
             modelBuilder.Entity<AircraftMaintenance>()
-                .Property(am => am.Note) // Note is optional
-               
+                .Property(am => am.Notes) // Note is optional
+                .IsRequired()
+                .HasMaxLength(500) // Maximum length of 500 characters
+
+
 
 
 
