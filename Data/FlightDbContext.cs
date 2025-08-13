@@ -311,6 +311,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .HasMany(a => a.AircraftMaintenances) // An aircraft can have many maintenance records
                 .WithOne(am => am.Aircraft) // Each maintenance record belongs to one aircraft
+                .HasForeignKey(am => am.AircraftId) // Foreign key in AircraftMaintenance table
 
 
 
