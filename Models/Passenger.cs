@@ -16,5 +16,7 @@ namespace FlightManagementCompanyProject.Models
 
         public string Nationality { get; set; } 
 
+        public DateTime DOB { get; set; } // Date of birth of the passenger
+
     }
 }
