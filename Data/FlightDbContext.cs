@@ -274,6 +274,10 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Configure AircraftId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
 
+            // TailNumber configuration
+            modelBuilder.Entity<Aircraft>()
+               
+
 
 
 
