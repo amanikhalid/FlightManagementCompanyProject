@@ -245,6 +245,8 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for Ticket
             // one-to-many relationship with Baggage
             modelBuilder.Entity<Ticket>()
+                .HasMany(t => t.Baggages) // A ticket can have many baggage items
+               
 
 
 
