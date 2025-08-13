@@ -14,5 +14,7 @@ namespace FlightManagementCompanyProject.Models
 
         public string Role { get; set; } // Role of the crew member (e.g., pilot, flight attendant)
 
+        public string LicenseNo { get; set; } // License number of the crew member, if applicable
+
     }
 }
