@@ -320,6 +320,9 @@ namespace FlightManagementCompanyProject.Data
 
             // AircraftMaintenance auto-increment configuration
             modelBuilder.Entity<AircraftMaintenance>()
+                .Property(am => am.MaintenanceId) 
+
+
 
 
 
