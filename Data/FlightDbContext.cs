@@ -105,6 +105,11 @@ namespace FlightManagementCompanyProject.Data
             // Route Entity Configuration
             modelBuilder.Entity<Route>()
                 .HasKey(r => r.RouteId); // Set RouteId as the primary key
+            // Route auto-increment configuration
+            modelBuilder.Entity<Route>()
+                .Property(r => r.RouteId)
+                .ValueGeneratedOnAdd() // Configure RouteId to be auto-incremented
+                .HasColumnType("int"); // Specify the column type as int
         }
 
     }
