@@ -19,5 +19,7 @@ namespace FlightManagementCompanyProject.Data
 
         public DbSet<Booking> Bookings { get; set; } // DbSet for Booking entities
 
+        public DbSet<CrewMember> CrewMembers { get; set; } // DbSet for CrewMember entities
+
     }
 }
