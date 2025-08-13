@@ -290,7 +290,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .Property(a => a.Model) // Model is required
                 .IsRequired()
-                
+                .HasMaxLength(50) // Maximum length of 50 characters
+
+
 
 
 
