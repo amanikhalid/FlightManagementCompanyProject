@@ -230,6 +230,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(10) // Maximum length of 10 characters
                 .HasColumnType("nvarchar(10)"); // Specify the column type as nvarchar(10)
 
+            // Fare configuration
+            modelBuilder.Entity<Ticket>()
+               
+
 
 
 
