@@ -175,6 +175,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Flight>()
                 .Property(f => f.ArrivalUtc) // Arrival time is required
                 .IsRequired()
+                .HasColumnType("datetime"); // Specify the column type as datetime
 
 
 
