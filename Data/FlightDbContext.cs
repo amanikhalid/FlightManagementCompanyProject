@@ -430,6 +430,9 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("datetime"); // Specify the column type as datetime
 
+            // Status configuration
+            modelBuilder.Entity<Booking>()
+
 
 
 
