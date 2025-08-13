@@ -187,7 +187,9 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for Flight
             // one-to-many relationship with Ticket
             modelBuilder.Entity<Flight>()
-               
+                .HasMany(f => f.Tickets) // A flight can have many tickets
+                
+
 
 
 
