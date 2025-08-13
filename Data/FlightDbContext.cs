@@ -246,7 +246,9 @@ namespace FlightManagementCompanyProject.Data
             // one-to-many relationship with Baggage
             modelBuilder.Entity<Ticket>()
                 .HasMany(t => t.Baggages) // A ticket can have many baggage items
-               
+                .WithOne(b => b.Ticket) // Each baggage item belongs to one ticket
+
+
 
 
 
