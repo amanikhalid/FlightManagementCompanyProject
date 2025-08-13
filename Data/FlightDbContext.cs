@@ -253,7 +253,9 @@ namespace FlightManagementCompanyProject.Data
             // one-to-many relationship with Booking
             modelBuilder.Entity<Ticket>()
                 .HasOne(t => t.Booking) // Each ticket belongs to one booking
-               
+                .WithMany(b => b.Tickets) // A booking can have many tickets
+
+
 
 
 
