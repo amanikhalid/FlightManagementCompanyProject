@@ -379,7 +379,8 @@ namespace FlightManagementCompanyProject.Data
             // Unique constraint for PassportNo
             modelBuilder.Entity<Passenger>()
                 .HasIndex(p => p.PassportNo)
-    
+                .IsUnique(); // Ensure that PassportNo is unique across all passengers
+
 
 
 
