@@ -142,6 +142,12 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Flight>()
                 .HasKey(f => f.FlightId); // Set FlightId as the primary key
 
+            // Flight auto-increment configuration
+            modelBuilder.Entity<Flight>()
+                .Property(f => f.FlightId)
+                .ValueGeneratedOnAdd() // Configure FlightId to be auto-incremented
+                .HasColumnType("int"); // Specify the column type as int
+
 
 
 
