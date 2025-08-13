@@ -8,5 +8,6 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Booking
     {
+        public int BookingId { get; set; } // Unique identifier for the booking 
     }
 }
