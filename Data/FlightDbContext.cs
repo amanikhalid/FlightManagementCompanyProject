@@ -123,6 +123,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasMany(r => r.Flights) // A route can have many flights
                 .WithOne(f => f.Route) // Each flight has one route
                 .HasForeignKey(f => f.RouteId) // Foreign key in Flight table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for flights
         }
 
     }
