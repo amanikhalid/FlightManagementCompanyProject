@@ -15,5 +15,9 @@ namespace FlightManagementCompanyProject.Models
         public string Model { get; set; } // Model of the aircraft
 
         public int Capacity { get; set; } // Seating capacity of the aircraft
+
+        // Navigation Propertie
+        // one-to-many relationship with Flight
+        public ICollection<Flight> Flights { get; set; } 
     }
 }
