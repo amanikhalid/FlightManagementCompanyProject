@@ -250,6 +250,9 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(b => b.TicketId) // Foreign key in Baggage table
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for baggage items
 
+            // one-to-many relationship with Booking
+            modelBuilder.Entity<Ticket>()
+
 
 
 
