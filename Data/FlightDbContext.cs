@@ -220,7 +220,9 @@ namespace FlightManagementCompanyProject.Data
             // Ticket auto-increment configuration
             modelBuilder.Entity<Ticket>()
                 .Property(t => t.TicketId)
-               
+                .ValueGeneratedOnAdd() // Configure TicketId to be auto-incremented
+
+
 
 
 
