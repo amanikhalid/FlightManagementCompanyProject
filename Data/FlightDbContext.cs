@@ -88,6 +88,13 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired() // TimeZone is required
                 .HasMaxLength(50) // Maximum length of 50 characters
                 .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
+
+            // Navigation properties for Airport
+            // one-to-many relationship with Route
+            modelBuilder.Entity<Airport>()
+                .HasMany(a => a.OriginRoutes) // An airport can have many origin routes
+                .WithOne(r => r.OriginAirport) // Each route has one origin airport
+                .HasForeignKey(r => r.OriginAirportId); // Foreign key in Route table
         }
 
     }
