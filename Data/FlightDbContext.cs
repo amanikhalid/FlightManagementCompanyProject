@@ -240,6 +240,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Ticket>()
                 .Property(t => t.CheckedIn) // CheckedIn is required
                 .IsRequired()
+                .HasColumnType("bit"); // Specify the column type as bit (boolean)
 
 
 
