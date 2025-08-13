@@ -412,6 +412,9 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Configure BookingId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
 
+            // BookingRef configuration
+            modelBuilder.Entity<Booking>()
+
 
 
 
