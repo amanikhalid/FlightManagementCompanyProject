@@ -376,6 +376,11 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(20)
                 .HasColumnType("nvarchar(20)"); // string type with max length 20
 
+            // Unique constraint for PassportNo
+            modelBuilder.Entity<Passenger>()
+                .HasIndex(p => p.PassportNo)
+    
+
 
 
 
