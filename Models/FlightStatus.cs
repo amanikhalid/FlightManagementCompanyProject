@@ -13,6 +13,7 @@ namespace FlightManagementCompanyProject.Models
         Cancelled, // Flight is cancelled
         InFlight, // Flight is currently in the air
         Landed, // Flight has landed
+        Completed // Flight has completed its journey
 
     }
 }
