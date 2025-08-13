@@ -31,5 +31,6 @@ namespace FlightManagementCompanyProject.Models
 
         // one-to-many relationship with Route
         public int RouteId { get; set; } // Foreign key to the Route
+        public Route Route { get; set; } // Navigation property to the Route
     }
 }
