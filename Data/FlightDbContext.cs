@@ -204,6 +204,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasOne(f => f.Aircraft) // one Aircraft
                   .WithMany(a => a.Flights) // many Flights in Aircraft
                   .HasForeignKey(f => f.AircraftId) // Foreign key in Flight
+                   .OnDelete(DeleteBehavior.NoAction); // No action on delete to prevent cascading deletes
 
 
 
