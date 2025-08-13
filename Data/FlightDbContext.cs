@@ -369,6 +369,13 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(50)
                 .HasColumnType("nvarchar(50)"); // string type with max length 50
 
+            // PassportNo configuration
+            modelBuilder.Entity<Passenger>()
+                .Property(p => p.PassportNo)
+                .IsRequired()
+                .HasMaxLength(20)
+               
+
 
 
 
