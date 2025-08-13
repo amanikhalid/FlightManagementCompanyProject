@@ -15,5 +15,9 @@ namespace FlightManagementCompanyProject.Models
         public string Type { get; set; } // Type of maintenance (e.g., routine, emergency)
 
         public string Notes { get; set; } // Additional notes or details about the maintenance
+
+        // Navigation properties 
+        // one-to-many relationship with Aircraft
+        public int AircraftId { get; set; } // Foreign key to the Aircraft
     }
 }
