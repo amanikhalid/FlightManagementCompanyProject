@@ -23,5 +23,7 @@ namespace FlightManagementCompanyProject.Models
 
         public int DestinationAirportId { get; set; } // Foreign key to the destination Airport
 
+        public Airport DestinationAirport { get; set; } // Navigation property to the destination Airport
+
     }
 }
