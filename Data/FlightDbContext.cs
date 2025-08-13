@@ -362,6 +362,9 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Auto-increment primary key
                  .HasColumnType("int"); // int type for PassengerId
 
+            // FullName configuration
+            modelBuilder.Entity<Passenger>()
+
 
 
 
