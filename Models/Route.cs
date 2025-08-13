@@ -12,5 +12,9 @@ namespace FlightManagementCompanyProject.Models
 
         public int DistanceKm { get; set; } // Distance of the route in kilometers
 
+        // Navigation properties
+        // one-to-many relationship with Flight
+        public ICollection<Flight> Flights { get; set; } // Collection of flights associated with this route
+
     }
 }
