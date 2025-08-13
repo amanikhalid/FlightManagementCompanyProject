@@ -81,6 +81,13 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired() // Country is required
                 .HasMaxLength(50) // Maximum length of 50 characters
                 .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
+
+            // TimeZone configuration
+            modelBuilder.Entity<Airport>()
+                .Property(a => a.TimeZone)
+                .IsRequired() // TimeZone is required
+                .HasMaxLength(50) // Maximum length of 50 characters
+                .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
         }
 
     }
