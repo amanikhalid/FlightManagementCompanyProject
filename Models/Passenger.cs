@@ -18,5 +18,9 @@ namespace FlightManagementCompanyProject.Models
 
         public DateTime DOB { get; set; } // Date of birth of the passenger
 
+        // Navigation properties
+        // one-to-many relationship with Booking
+        public ICollection<Booking> Bookings { get; set; } // Collection of bookings associated with this passenger
+
     }
 }
