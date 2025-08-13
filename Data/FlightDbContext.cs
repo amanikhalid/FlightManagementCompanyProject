@@ -397,6 +397,8 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for Passenger
             // one-to-many relationship with Booking
             modelBuilder.Entity<Passenger>()
+                .HasMany(p => p.Bookings) // A passenger can have many bookings
+                
 
 
 
