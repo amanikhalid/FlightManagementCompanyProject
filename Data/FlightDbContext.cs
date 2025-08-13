@@ -284,7 +284,8 @@ namespace FlightManagementCompanyProject.Data
             // Unique constraint for TailNumber
             modelBuilder.Entity<Aircraft>()
                 .HasIndex(a => a.TailNumber)
-                
+                .IsUnique(); // Ensure that TailNumber is unique across all aircraft
+
 
 
 
