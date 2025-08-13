@@ -314,6 +314,9 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(am => am.AircraftId) // Foreign key in AircraftMaintenance table
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for maintenance records
 
+            // AircraftMaintenance Entity Configuration
+            modelBuilder.Entity<AircraftMaintenance>()
+                
 
 
 
