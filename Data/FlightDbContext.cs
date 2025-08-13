@@ -53,8 +53,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Airport>()
                 .Property(a => a.IATA)
                 .IsRequired() // IATA code is required
-                .HasMaxLength(3); // IATA code has a maximum length of 3 characters
-
+                .HasMaxLength(3) // IATA code has a maximum length of 3 characters
+                .HasColumnType("nvarchar(3)"); // Specify the column type as nvarchar(3)
         }
 
     }
