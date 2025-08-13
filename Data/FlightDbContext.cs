@@ -326,7 +326,10 @@ namespace FlightManagementCompanyProject.Data
 
             // MaintenanceDate configuration
             modelBuilder.Entity<AircraftMaintenance>()
-               
+                .Property(am => am.MaintenanceDate) // Maintenance date is required
+                .IsRequired()
+                
+
 
 
 
