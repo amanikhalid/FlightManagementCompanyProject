@@ -374,7 +374,8 @@ namespace FlightManagementCompanyProject.Data
                 .Property(p => p.PassportNo)
                 .IsRequired()
                 .HasMaxLength(20)
-               
+                .HasColumnType("nvarchar(20)"); // string type with max length 20
+
 
 
 
