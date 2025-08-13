@@ -223,6 +223,10 @@ namespace FlightManagementCompanyProject.Data
                 .ValueGeneratedOnAdd() // Configure TicketId to be auto-incremented
                 .HasColumnType("int"); // Specify the column type as int
 
+            // SeatNumber configuration
+            modelBuilder.Entity<Ticket>()
+                
+
 
 
 
