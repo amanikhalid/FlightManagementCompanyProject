@@ -339,7 +339,10 @@ namespace FlightManagementCompanyProject.Data
 
             // Note configuration
             modelBuilder.Entity<AircraftMaintenance>()
-              
+                .Property(am => am.Note) // Note is optional
+               
+
+
 
 
 
