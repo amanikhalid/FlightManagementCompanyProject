@@ -166,6 +166,11 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("datetime"); // Specify the column type as datetime
 
+            // unique constraint for DepartureUtc
+            modelBuilder.Entity<Flight>()
+                .HasIndex(f => f.DepartureUtc)
+                
+
 
 
 
