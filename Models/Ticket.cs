@@ -19,5 +19,6 @@ namespace FlightManagementCompanyProject.Models
         // Navigation properties
         // one-to-many relationship with Booking 
         public int BookingId { get; set; } // Foreign key to the Booking
+        public Booking Booking { get; set; } // Navigation property to the Booking
     }
 }
