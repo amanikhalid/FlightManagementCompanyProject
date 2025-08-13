@@ -310,7 +310,9 @@ namespace FlightManagementCompanyProject.Data
             // one-to-many relationship with AircraftMaintenance
             modelBuilder.Entity<Aircraft>()
                 .HasMany(a => a.AircraftMaintenances) // An aircraft can have many maintenance records
-                
+                .WithOne(am => am.Aircraft) // Each maintenance record belongs to one aircraft
+
+
 
 
 
