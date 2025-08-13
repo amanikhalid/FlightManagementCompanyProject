@@ -360,7 +360,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Passenger>()
                 .Property (p => p.PassengerId)
                 .ValueGeneratedOnAdd() // Auto-increment primary key
-
+                 .HasColumnType("int"); // int type for PassengerId
 
 
 
