@@ -213,6 +213,9 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(f => f.RouteId) // Foreign key in Flight
                 .OnDelete(DeleteBehavior.NoAction); // No action on delete to prevent cascading deletes
 
+            // Ticket Entity Configuration
+            modelBuilder.Entity<Ticket>()
+               
 
 
 
