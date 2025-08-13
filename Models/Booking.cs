@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Models
         public string BookingRef { get; set; } // Reference number for the booking
 
         public DateTime BookingDate { get; set; } // Date when the booking was made
+
+        public string Status { get; set; } // Status of the booking (e.g., confirmed, cancelled)
     }
 }
