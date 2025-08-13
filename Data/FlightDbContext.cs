@@ -422,7 +422,8 @@ namespace FlightManagementCompanyProject.Data
             // Unique constraint for BookingRef
             modelBuilder.Entity<Booking>()
                 .HasIndex(b => b.BookingRef)
-                
+                .IsUnique(); // Ensure that BookingRef is unique across all bookings
+
 
 
 
