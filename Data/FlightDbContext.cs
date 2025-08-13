@@ -278,7 +278,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .Property(a => a.TailNumber) // Tail number is required
                 .IsRequired()
+                .HasMaxLength(10) // Maximum length of 10 characters
                 .HasColumnType("int"); // Specify the column type as int
+            
 
 
 
