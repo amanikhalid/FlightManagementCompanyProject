@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Models
         public string SeatNumber { get; set; } // Seat number assigned to the ticket
 
         public decimal Fare { get; set; } // Fare amount for the ticket
+
+        public bool CheckedIn { get; set; } // Indicates if the passenger has checked in for the flight
     }
 }
