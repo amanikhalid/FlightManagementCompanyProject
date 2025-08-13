@@ -47,7 +47,13 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Airport>()
                 .Property(a => a.AirportId)
                 .ValueGeneratedOnAdd()// Configure AirportId to be auto-incremented
-            .HasColumnType("int"); // Specify the column type as int
+                .HasColumnType("int"); // Specify the column type as int
+
+            // IATA code configuration
+            modelBuilder.Entity<Airport>()
+                .Property(a => a.IATA)
+                .IsRequired() // IATA code is required
+                .HasMaxLength(3); // IATA code has a maximum length of 3 characters
 
         }
 
