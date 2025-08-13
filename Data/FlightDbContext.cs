@@ -318,6 +318,10 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<AircraftMaintenance>()
                 .HasKey(am => am.MaintenanceId); // Set MaintenanceId as the primary key
 
+            // AircraftMaintenance auto-increment configuration
+            modelBuilder.Entity<AircraftMaintenance>()
+
+
 
 
 
