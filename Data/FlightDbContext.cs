@@ -383,6 +383,9 @@ namespace FlightManagementCompanyProject.Data
 
             // Nationality configuration
             modelBuilder.Entity<Passenger>()
+                .Property(p => p.Nationality) 
+                .IsRequired()
+                .HasMaxLength(50) // Maximum length of 50 characters
 
 
 
