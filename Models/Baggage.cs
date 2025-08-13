@@ -17,6 +17,7 @@ namespace FlightManagementCompanyProject.Models
         // Navigation properties
         // one-to-many relationship with Ticket
         public int TicketId { get; set; } // Foreign key to the Ticket
+        public Ticket Ticket { get; set; } // Navigation property to the Ticket 
 
 
     }
