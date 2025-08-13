@@ -448,6 +448,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .HasOne(b => b.Passenger) // Each booking belongs to one passenger
                 .WithMany(p => p.Bookings) // A passenger can have many bookings
+                .HasForeignKey(b => b.PassengerId) // Foreign key in Booking table
 
 
 
