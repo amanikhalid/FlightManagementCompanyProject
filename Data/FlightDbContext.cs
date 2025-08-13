@@ -434,7 +434,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .Property(b => b.Status) // Status is required
                 .IsRequired()
-              
+                .HasMaxLength(20) // Maximum length of 20 characters
+
+
 
 
 
