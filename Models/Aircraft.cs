@@ -11,5 +11,7 @@ namespace FlightManagementCompanyProject.Models
         public int AircraftId { get; set; } // Unique identifier for the aircraft
 
         public string TailNumber { get; set; } // Tail number of the aircraft
+
+        public string Model { get; set; } // Model of the aircraft
     }
 }
