@@ -12,5 +12,7 @@ namespace FlightManagementCompanyProject.Models
 
         public string FlightNumber { get; set; } // Flight number (e.g., AA123)
 
+        public DateTime DepartureUtc { get; set; } // Scheduled departure time in UTC
+
     }
 }
