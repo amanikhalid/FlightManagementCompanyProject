@@ -16,6 +16,8 @@ namespace FlightManagementCompanyProject.Models
 
         public string Status { get; set; } // Status of the booking (e.g., confirmed, cancelled)
 
-
+        // Navigation properties
+        // one-to-many relationship with Ticket
+        public ICollection<Ticket> Tickets { get; set; } // Collection of tickets associated with this booking
     }
 }
