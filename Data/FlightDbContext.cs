@@ -94,7 +94,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Airport>()
                 .HasMany(a => a.OriginRoutes) // An airport can have many origin routes
                 .WithOne(r => r.OriginAirport) // Each route has one origin airport
-                .HasForeignKey(r => r.OriginAirportId); // Foreign key in Route table
+                .HasForeignKey(r => r.OriginAirportId) // Foreign key in Route table
+            .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for origin routes
         }
 
     }
