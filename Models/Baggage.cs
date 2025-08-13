@@ -8,5 +8,8 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Baggage
     {
+        public int BaggageId { get; set; } // Unique identifier for the baggage item
+
+
     }
 }
