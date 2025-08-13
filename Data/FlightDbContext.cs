@@ -138,6 +138,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(r => r.DestinationAirportId) // Foreign key in Route table
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for destination airport
 
+            // Flight Entity Configuration
+            modelBuilder.Entity<Flight>()
+                .HasKey(f => f.FlightId); // Set FlightId as the primary key
+
 
 
 
