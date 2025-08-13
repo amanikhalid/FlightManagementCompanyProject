@@ -22,5 +22,7 @@ namespace FlightManagementCompanyProject.Models
 
         // one-to-many relationship with Passenger
         public int PassengerId { get; set; } // Foreign key to the Passenger
+
+        public Passenger Passenger { get; set; } // Navigation property to the Passenger
     }
 }
