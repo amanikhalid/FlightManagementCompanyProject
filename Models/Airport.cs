@@ -23,5 +23,6 @@ namespace FlightManagementCompanyProject.Models
         // Navigation properties 
         // one-to-many relationship with Route
         public ICollection<Route> OriginRoutes { get; set; } // Routes originating from this airport 
+        public ICollection<Route> DestinationRoutes { get; set; } // Routes arriving at this airport
     }
 }
