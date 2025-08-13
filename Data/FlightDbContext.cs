@@ -286,6 +286,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasIndex(a => a.TailNumber)
                 .IsUnique(); // Ensure that TailNumber is unique across all aircraft
 
+            // Model configuration
+            modelBuilder.Entity<Aircraft>()
+                
+
 
 
 
