@@ -28,5 +28,8 @@ namespace FlightManagementCompanyProject.Models
         // one-to-many relationship with Aircraft
         public int AircraftId { get; set; } // Foreign key to the Aircraft
         public Aircraft Aircraft { get; set; } // Navigation property to the Aircraft
+
+        // one-to-many relationship with Route
+        public int RouteId { get; set; } // Foreign key to the Route
     }
 }
