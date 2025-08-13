@@ -15,5 +15,7 @@ namespace FlightManagementCompanyProject.Models
         public DateTime BookingDate { get; set; } // Date when the booking was made
 
         public string Status { get; set; } // Status of the booking (e.g., confirmed, cancelled)
+
+
     }
 }
