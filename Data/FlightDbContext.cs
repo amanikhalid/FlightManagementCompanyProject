@@ -280,7 +280,12 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasMaxLength(10) // Maximum length of 10 characters
                 .HasColumnType("int"); // Specify the column type as int
-            
+
+            // Unique constraint for TailNumber
+            modelBuilder.Entity<Aircraft>()
+                .HasIndex(a => a.TailNumber)
+                
+
 
 
 
