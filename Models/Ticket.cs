@@ -15,5 +15,9 @@ namespace FlightManagementCompanyProject.Models
         public decimal Fare { get; set; } // Fare amount for the ticket
 
         public bool CheckedIn { get; set; } // Indicates if the passenger has checked in for the flight
+
+        // Navigation properties
+        // one-to-many relationship with Booking 
+        public int BookingId { get; set; } // Foreign key to the Booking
     }
 }
