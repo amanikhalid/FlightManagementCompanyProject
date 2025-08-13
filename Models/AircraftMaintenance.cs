@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Models
         public DateTime MaintenanceDate { get; set; } // Date of the maintenance
 
         public string Type { get; set; } // Type of maintenance (e.g., routine, emergency)
+
+        public string Notes { get; set; } // Additional notes or details about the maintenance
     }
 }
