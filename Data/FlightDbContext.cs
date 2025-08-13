@@ -232,7 +232,9 @@ namespace FlightManagementCompanyProject.Data
 
             // Fare configuration
             modelBuilder.Entity<Ticket>()
-               
+                .Property(t => t.Fare) // Fare is required
+                
+
 
 
 
