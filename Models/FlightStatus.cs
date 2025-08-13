@@ -10,6 +10,7 @@ namespace FlightManagementCompanyProject.Models
     {
         Scheduled, // Flight is scheduled
         Delayed, // Flight is delayed
+        Cancelled, // Flight is cancelled
 
     }
 }
