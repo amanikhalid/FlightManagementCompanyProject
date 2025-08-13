@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Models
         public string TailNumber { get; set; } // Tail number of the aircraft
 
         public string Model { get; set; } // Model of the aircraft
+
+        public int Capacity { get; set; } // Seating capacity of the aircraft
     }
 }
