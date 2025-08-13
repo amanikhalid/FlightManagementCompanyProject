@@ -226,7 +226,8 @@ namespace FlightManagementCompanyProject.Data
             // SeatNumber configuration
             modelBuilder.Entity<Ticket>()
                 .Property(t => t.SeatNumber) // Seat number is required
-                .IsRequired() 
+                .IsRequired()
+                .HasMaxLength(10) // Maximum length of 10 characters
 
 
 
