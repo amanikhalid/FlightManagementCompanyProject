@@ -67,6 +67,13 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired() // Name is required
                 .HasMaxLength(100) // Maximum length of 100 characters
                 .HasColumnType("nvarchar(100)"); // Specify the column type as nvarchar(100)
+
+            // City configuration
+            modelBuilder.Entity<Airport>()
+                .Property(a => a.City)
+                .IsRequired() // City is required
+                .HasMaxLength(50) // Maximum length of 50 characters
+                .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
         }
 
     }
