@@ -247,6 +247,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Ticket>()
                 .HasMany(t => t.Baggages) // A ticket can have many baggage items
                 .WithOne(b => b.Ticket) // Each baggage item belongs to one ticket
+                .HasForeignKey(b => b.TicketId) // Foreign key in Baggage table
 
 
 
