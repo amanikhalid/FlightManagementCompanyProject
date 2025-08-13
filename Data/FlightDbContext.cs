@@ -335,6 +335,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(am => am.Type) // Type of maintenance is required
                 .IsRequired()
                 .HasMaxLength(50) // Maximum length of 50 characters
+                .HasColumnType("nvarchar(50)"); // Specify the column type as nvarchar(50)
 
 
 
