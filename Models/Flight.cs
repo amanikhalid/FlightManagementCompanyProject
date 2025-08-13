@@ -8,5 +8,7 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Flight
     {
+        public int FlightId { get; set; } // Unique identifier for the flight
+       
     }
 }
