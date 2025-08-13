@@ -116,6 +116,11 @@ namespace FlightManagementCompanyProject.Data
                 .Property(r => r.DistanceKm)
                 .IsRequired() // DistanceKm is required
                 .HasColumnType("int"); // Specify the column type as int
+
+            // Navigation properties for Route
+            // one-to-many relationship with Flight
+            modelBuilder.Entity<Route>()
+                .HasMany(r => r.Flights) // A route can have many flights
         }
 
     }
