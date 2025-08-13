@@ -419,6 +419,11 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(20) // Maximum length of 20 characters
                 .HasColumnType("nvarchar(20)"); // Specify the column type as nvarchar(20)
 
+            // Unique constraint for BookingRef
+            modelBuilder.Entity<Booking>()
+                .HasIndex(b => b.BookingRef)
+                
+
 
 
 
