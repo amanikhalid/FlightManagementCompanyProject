@@ -169,7 +169,8 @@ namespace FlightManagementCompanyProject.Data
             // unique constraint for DepartureUtc
             modelBuilder.Entity<Flight>()
                 .HasIndex(f => f.DepartureUtc)
-                
+                .IsUnique(); // Ensure that DepartureUtc is unique across all flights
+
 
 
 
