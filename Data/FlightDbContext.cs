@@ -136,6 +136,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasOne(r => r.DestinationAirport) // Each route has one destination airport
                 .WithMany(a => a.DestinationRoutes) // An airport can have many destination routes
                 .HasForeignKey(r => r.DestinationAirportId) // Foreign key in Route table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for destination airport
 
 
 
