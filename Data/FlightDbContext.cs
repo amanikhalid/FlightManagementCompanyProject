@@ -428,7 +428,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .Property(b => b.BookingDate) // Booking date is required
                 .IsRequired()
-               
+                .HasColumnType("datetime"); // Specify the column type as datetime
+
 
 
 
