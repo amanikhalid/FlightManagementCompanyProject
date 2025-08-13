@@ -174,7 +174,9 @@ namespace FlightManagementCompanyProject.Data
             // ArrivalUtc configuration
             modelBuilder.Entity<Flight>()
                 .Property(f => f.ArrivalUtc) // Arrival time is required
-                
+                .IsRequired()
+
+
 
 
 
