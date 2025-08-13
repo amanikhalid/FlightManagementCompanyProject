@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Models
 {
-    class Airport
+    public class Airport
     {
     }
 }
