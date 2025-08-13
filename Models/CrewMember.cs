@@ -16,5 +16,9 @@ namespace FlightManagementCompanyProject.Models
 
         public string LicenseNo { get; set; } // License number of the crew member, if applicable
 
+        // Navigation properties
+        // one-to-many relationship with FlightCrew
+        public ICollection<FlightCrew> FlightCrews { get; set; } // Collection of flight crews this crew member is part of
+
     }
 }
