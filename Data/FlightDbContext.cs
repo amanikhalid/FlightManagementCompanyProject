@@ -160,6 +160,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasIndex(f => f.FlightNumber)
                 .IsUnique(); // Ensure that FlightNumber is unique across all flights
 
+            // DepartureUtc configuration
+            modelBuilder.Entity<Flight>()
+                .Property(f => f.DepartureUtc) // Departure time is required
+               
 
 
 
