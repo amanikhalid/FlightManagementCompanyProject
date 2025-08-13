@@ -128,7 +128,9 @@ namespace FlightManagementCompanyProject.Data
             // one-to-many relationship with Airport
             modelBuilder.Entity<Route>()
                 .HasOne(r => r.OriginAirport) // Each route has one origin airport
-                
+                .WithMany(a => a.OriginRoutes) // An airport can have many origin routes
+
+
 
         }
 
