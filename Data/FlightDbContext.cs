@@ -297,7 +297,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Aircraft>()
                 .Property(a => a.Capacity) // Capacity is required
                 .IsRequired()
-                
+                .HasColumnType("int"); // Specify the column type as int
+
 
 
 
