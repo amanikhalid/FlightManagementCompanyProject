@@ -60,6 +60,13 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Airport>()
                 .HasIndex(a => a.IATA)
                 .IsUnique(); // Ensure that IATA code is unique across all airports
+
+            // Name configuration
+            modelBuilder.Entity<Airport>()
+                .Property(a => a.Name)
+                .IsRequired() // Name is required
+                .HasMaxLength(100) // Maximum length of 100 characters
+                .HasColumnType("nvarchar(100)"); // Specify the column type as nvarchar(100)
         }
 
     }
