@@ -9,6 +9,8 @@ namespace FlightManagementCompanyProject.Models
     public class Flight
     {
         public int FlightId { get; set; } // Unique identifier for the flight
-       
+
+        public string FlightNumber { get; set; } // Flight number (e.g., AA123)
+
     }
 }
