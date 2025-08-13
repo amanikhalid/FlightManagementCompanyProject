@@ -276,7 +276,10 @@ namespace FlightManagementCompanyProject.Data
 
             // TailNumber configuration
             modelBuilder.Entity<Aircraft>()
-               
+                .Property(a => a.TailNumber) // Tail number is required
+                .IsRequired()
+                
+
 
 
 
