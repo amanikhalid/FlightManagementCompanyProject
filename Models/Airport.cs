@@ -8,5 +8,6 @@ namespace FlightManagementCompanyProject.Models
 {
     public class Airport
     {
+        public int AirportId { get; set; } // Unique identifier for the airport
     }
 }
