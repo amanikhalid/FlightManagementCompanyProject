@@ -8,5 +8,6 @@ namespace FlightManagementCompanyProject.Models
 {
     public class CrewMember
     {
+        public int CrewId { get; set; } // Unique identifier for the crew member 
     }
 }
