@@ -121,6 +121,7 @@ namespace FlightManagementCompanyProject.Data
             // one-to-many relationship with Flight
             modelBuilder.Entity<Route>()
                 .HasMany(r => r.Flights) // A route can have many flights
+                .WithOne(f => f.Route) // Each flight has one route
         }
 
     }
