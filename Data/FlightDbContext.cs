@@ -299,6 +299,11 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("int"); // Specify the column type as int
 
+            // Navigation properties for Aircraft
+            // one-to-many relationship with Flight
+            modelBuilder.Entity<Aircraft>()
+               
+
 
 
 
