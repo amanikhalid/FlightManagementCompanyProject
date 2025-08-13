@@ -179,6 +179,9 @@ namespace FlightManagementCompanyProject.Data
 
             // Status configuration
             modelBuilder.Entity<Flight>()
+                .Property(f => f.Status) // Status is required
+                .IsRequired()
+                
 
 
 
