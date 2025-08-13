@@ -203,6 +203,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Flight>()
                 .HasOne(f => f.Aircraft) // one Aircraft
                   .WithMany(a => a.Flights) // many Flights in Aircraft
+                  .HasForeignKey(f => f.AircraftId) // Foreign key in Flight
 
 
 
