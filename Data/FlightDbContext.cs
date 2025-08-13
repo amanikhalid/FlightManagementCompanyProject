@@ -270,7 +270,11 @@ namespace FlightManagementCompanyProject.Data
 
             // Aircraft auto-increment configuration
             modelBuilder.Entity<Aircraft>()
-             
+                .Property(a => a.AircraftId)
+                .ValueGeneratedOnAdd() // Configure AircraftId to be auto-incremented
+
+
+
 
 
 
