@@ -27,5 +27,7 @@ namespace FlightManagementCompanyProject.Data
 
         public DbSet<Passenger> Passengers { get; set; } // DbSet for Passenger entities
 
+        public DbSet<Route> Routes { get; set; } // DbSet for Route entities
+
     }
 }
