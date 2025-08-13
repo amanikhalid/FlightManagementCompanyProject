@@ -238,7 +238,9 @@ namespace FlightManagementCompanyProject.Data
 
             // CheckedIn configuration
             modelBuilder.Entity<Ticket>()
+                .Property(t => t.CheckedIn) // CheckedIn is required
                
+
 
 
 
