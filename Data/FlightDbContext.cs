@@ -181,7 +181,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Flight>()
                 .Property(f => f.Status) // Status is required
                 .IsRequired()
-                
+                .HasMaxLength(20) // Maximum length of 20 characters
+
+
 
 
 
