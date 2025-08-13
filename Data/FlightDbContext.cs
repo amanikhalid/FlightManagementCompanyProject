@@ -410,7 +410,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Booking>()
                 .Property(b => b.BookingId)
                 .ValueGeneratedOnAdd() // Configure BookingId to be auto-incremented
-              
+                .HasColumnType("int"); // Specify the column type as int
+
 
 
 
