@@ -17,5 +17,7 @@ namespace FlightManagementCompanyProject.Data
 
         public DbSet<Baggage> Baggages { get; set; } // DbSet for Baggage entities
 
+        public DbSet<Booking> Bookings { get; set; } // DbSet for Booking entities
+
     }
 }
