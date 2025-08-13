@@ -151,6 +151,8 @@ namespace FlightManagementCompanyProject.Data
             // FlightNumber configuration
             modelBuilder.Entity<Flight>()
                 .Property(f => f.FlightNumber) // Flight number is required
+                .IsRequired() 
+                .HasMaxLength(10) // Maximum length of 10 characters
 
 
 
