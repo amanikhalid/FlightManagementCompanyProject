@@ -347,7 +347,9 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for AircraftMaintenance
             // one-to-many relationship with Aircraft
             modelBuilder.Entity<AircraftMaintenance>()
+                .HasOne(am => am.Aircraft) // Each maintenance record belongs to one aircraft
                 
+
 
 
 
