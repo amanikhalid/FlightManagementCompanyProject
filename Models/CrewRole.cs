@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Models
 {
-    public class CrewRole
+    public enum CrewRole // Enum to represent different roles in the flight crew
     {
+        
     }
 }
