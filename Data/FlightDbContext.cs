@@ -264,6 +264,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasForeignKey(t => t.FlightId) // Foreign key in Ticket table
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for flights
 
+            // Aircraft Entity Configuration
+            modelBuilder.Entity<Aircraft>()
+                .HasKey(a => a.AircraftId); // Set AircraftId as the primary key
+
 
 
 
