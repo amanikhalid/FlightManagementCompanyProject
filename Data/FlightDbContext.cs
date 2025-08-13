@@ -215,7 +215,8 @@ namespace FlightManagementCompanyProject.Data
 
             // Ticket Entity Configuration
             modelBuilder.Entity<Ticket>()
-               
+                .HasKey(t => t.TicketId); // Set TicketId as the primary key
+
 
 
 
