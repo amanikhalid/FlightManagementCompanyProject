@@ -443,6 +443,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasMany(b => b.Tickets) // A booking can have many tickets
                 .WithOne(t => t.Booking) // Each ticket belongs to one booking
                 .HasForeignKey(t => t.BookingId) // Foreign key in Ticket table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for tickets
 
 
 
