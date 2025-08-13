@@ -155,6 +155,11 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(10) // Maximum length of 10 characters
                 .HasColumnType("nvarchar(10)"); // Specify the column type as nvarchar(10)
 
+            //unique constraint for FlightNumber
+            modelBuilder.Entity<Flight>()
+                .HasIndex(f => f.FlightNumber)
+                .IsUnique(); // Ensure that FlightNumber is unique across all flights
+
 
 
 
