@@ -8,5 +8,7 @@ namespace FlightManagementCompanyProject.Models
 {
     public enum FlightStatus // Enum to represent the status of a flight
     {
+        Scheduled, // Flight is scheduled
+      
     }
 }
