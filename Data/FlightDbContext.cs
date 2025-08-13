@@ -122,6 +122,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Route>()
                 .HasMany(r => r.Flights) // A route can have many flights
                 .WithOne(f => f.Route) // Each flight has one route
+                .HasForeignKey(f => f.RouteId) // Foreign key in Flight table
         }
 
     }
