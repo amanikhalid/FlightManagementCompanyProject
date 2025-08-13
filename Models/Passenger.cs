@@ -13,5 +13,8 @@ namespace FlightManagementCompanyProject.Models
         public string FullName { get; set; } // Full name of the passenger
 
         public string PassportNo { get; set; } // Passport number of the passenger
+
+        public string Nationality { get; set; } 
+
     }
 }
