@@ -15,5 +15,7 @@ namespace FlightManagementCompanyProject.Models
         public string City { get; set; } // City where the airport is located
 
         public string Country { get; set; } // Country where the airport is located
+
+        public string TimeZone { get; set; } // Time zone of the airport
     }
 }
