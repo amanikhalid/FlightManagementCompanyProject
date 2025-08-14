@@ -521,6 +521,11 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Baggage>()
                 .HasKey(b => b.BaggageId); // Set BaggageId as the primary key
 
+            // Baggage auto-increment configuration
+            modelBuilder.Entity<Baggage>()
+                .Property(b => b.BaggageId)
+               
+
 
 
 
