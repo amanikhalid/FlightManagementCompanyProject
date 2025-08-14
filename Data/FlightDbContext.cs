@@ -466,7 +466,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<CrewMember>()
                 .Property(cm => cm.FullName) // Full name is required
                 .IsRequired()
-               
+                .HasMaxLength(50) // Maximum length of 50 characters
+
+
 
 
 
