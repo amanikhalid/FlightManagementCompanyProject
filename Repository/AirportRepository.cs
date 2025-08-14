@@ -39,5 +39,7 @@ namespace FlightManagementCompanyProject.Repository
 
         public Airport GetById(int id) => _context.Airports.Find(id); // Get an airport record by ID
 
+        public IEnumerable<Airport> GetAll() => _context.Airports.ToList(); // Get all airport records
+
     }
 }
