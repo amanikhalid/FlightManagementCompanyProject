@@ -535,7 +535,10 @@ namespace FlightManagementCompanyProject.Data
 
             // TagNumber configuration
             modelBuilder.Entity<Baggage>()
+                .Property(b => b.TagNumber) // Tag number is required
+                .IsRequired()
               
+
 
 
 
