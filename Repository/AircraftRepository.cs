@@ -39,5 +39,7 @@ namespace FlightManagementCompanyProject.Repository
 
         public Aircraft GetById(int id) => _context.Aircrafts.Find(id); // Get an aircraft record by ID
 
+        public IEnumerable<Aircraft> GetAll() => _context.Aircrafts.ToList(); // Get all aircraft records
+
     }
 }
