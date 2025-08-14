@@ -481,6 +481,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(cm => cm.LicenseNo) // License number is required
                 .IsRequired()
                 .HasMaxLength(20) // Maximum length of 20 characters
+                .HasColumnType("nvarchar(20)"); // Specify the column type as nvarchar(20)
 
 
 
