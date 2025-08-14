@@ -35,5 +35,8 @@ namespace FlightManagementCompanyProject.Repository
             _context.AircraftMaintenances.Remove(aircraftMaintenance);
             _context.SaveChanges();
         }
+
+        public AircraftMaintenance GetById(int id) => _context.AircraftMaintenances.Find(id); // Get an aircraft maintenance record by ID
+
     }
 }
