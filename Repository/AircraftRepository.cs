@@ -36,5 +36,8 @@ namespace FlightManagementCompanyProject.Repository
             _context.Aircrafts.Remove(aircraft);
             _context.SaveChanges();
         }
+
+        public Aircraft GetById(int id) => _context.Aircrafts.Find(id); // Get an aircraft record by ID
+
     }
 }
