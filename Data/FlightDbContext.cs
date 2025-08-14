@@ -480,7 +480,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<CrewMember>()
                 .Property(cm => cm.LicenseNo) // License number is required
                 .IsRequired()
-               
+                .HasMaxLength(20) // Maximum length of 20 characters
+
+
 
 
 
