@@ -464,7 +464,10 @@ namespace FlightManagementCompanyProject.Data
 
             // FullName configuration
             modelBuilder.Entity<CrewMember>()
-             
+                .Property(cm => cm.FullName) // Full name is required
+                .IsRequired()
+               
+
 
 
 
