@@ -452,6 +452,11 @@ namespace FlightManagementCompanyProject.Data
                 .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for passengers
 
 
+            // CrewMember Entity Configuration
+            modelBuilder.Entity<CrewMember>()
+                
+
+
 
 
 
