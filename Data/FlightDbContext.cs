@@ -546,6 +546,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasOne(b => b.Ticket) // Each baggage item belongs to one ticket
                 .WithMany(t => t.Baggages) // A ticket can have many baggage items
                 .HasForeignKey(b => b.TicketId) // Foreign key in Baggage table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for baggage items
 
 
 
