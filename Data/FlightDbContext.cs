@@ -525,6 +525,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Baggage>()
                 .Property(b => b.BaggageId)
                 .ValueGeneratedOnAdd() // Configure BaggageId to be auto-incremented
+                .HasColumnType("int"); // Specify the column type as int
 
 
 
