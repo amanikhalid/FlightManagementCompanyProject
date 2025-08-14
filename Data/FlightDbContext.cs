@@ -529,7 +529,10 @@ namespace FlightManagementCompanyProject.Data
 
             // Weight configuration
             modelBuilder.Entity<Baggage>()
-              
+                .Property(b => b.Weight) // Weight is required
+                .IsRequired()
+               
+
 
 
 
