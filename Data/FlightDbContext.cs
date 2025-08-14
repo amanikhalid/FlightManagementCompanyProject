@@ -483,6 +483,10 @@ namespace FlightManagementCompanyProject.Data
                 .HasMaxLength(20) // Maximum length of 20 characters
                 .HasColumnType("nvarchar(20)"); // Specify the column type as nvarchar(20)
 
+            // Navigation properties for CrewMember
+            // one-to-many relationship with FlightCrew
+            modelBuilder.Entity<CrewMember>()
+
 
 
 
