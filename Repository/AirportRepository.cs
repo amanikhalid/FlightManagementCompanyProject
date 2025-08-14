@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,12 @@ namespace FlightManagementCompanyProject.Repository
         public AirportRepository(FlightDbContext context) // Initialize the context
         {
             _context = context;
+        }
+
+        public void Add(Airport airport) // Add a new airport record
+        {
+            _context.Airports.Add(airport);
+            _context.SaveChanges();
         }
     }
 }
