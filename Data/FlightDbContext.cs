@@ -474,6 +474,7 @@ namespace FlightManagementCompanyProject.Data
                 .Property(cm => cm.Role) // Role is required
                 .IsRequired()
                 .HasMaxLength(30) // Maximum length of 30 characters
+                .HasColumnType("nvarchar(30)"); // Specify the column type as nvarchar(30)
 
 
 
