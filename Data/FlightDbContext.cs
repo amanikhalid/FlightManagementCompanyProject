@@ -524,7 +524,9 @@ namespace FlightManagementCompanyProject.Data
             // Baggage auto-increment configuration
             modelBuilder.Entity<Baggage>()
                 .Property(b => b.BaggageId)
-               
+                .ValueGeneratedOnAdd() // Configure BaggageId to be auto-incremented
+
+
 
 
 
