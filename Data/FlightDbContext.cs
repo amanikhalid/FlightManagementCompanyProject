@@ -504,6 +504,8 @@ namespace FlightManagementCompanyProject.Data
 
             // CrewMember configuration
             modelBuilder.Entity<FlightCrew>()
+                .HasOne(fc => fc.CrewMember) // Each flight crew has one crew member
+              
 
 
 
