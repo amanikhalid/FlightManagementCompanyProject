@@ -513,7 +513,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<FlightCrew>()
                 .Property(fc => fc.RoleOnFlight) // Role on flight is required
                 .IsRequired()
-               
+                .HasMaxLength(30) // Maximum length of 30 characters
+
+
 
 
 
