@@ -11,5 +11,9 @@ namespace FlightManagementCompanyProject.Repository
 
     {
         private readonly FlightDbContext _context; // Constructor to inject the DbContext
+        public AircraftRepository(FlightDbContext context) // Initialize the context
+        {
+            _context = context;
+        }
     }
 }
