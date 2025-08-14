@@ -471,7 +471,10 @@ namespace FlightManagementCompanyProject.Data
 
             // Role configuration
             modelBuilder.Entity<CrewMember>()
-            
+                .Property(cm => cm.Role) // Role is required
+                .IsRequired()
+               
+
 
 
 
