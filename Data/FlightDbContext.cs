@@ -478,7 +478,10 @@ namespace FlightManagementCompanyProject.Data
 
             // LicenseNo configuration
             modelBuilder.Entity<CrewMember>()
+                .Property(cm => cm.LicenseNo) // License number is required
+                .IsRequired()
                
+
 
 
 
