@@ -22,5 +22,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Aircrafts.Add(aircraft);
             _context.SaveChanges();
         }
+
+        public void Update(Aircraft aircraft) // Update an existing aircraft record
+     
+        {
+            _context.Aircrafts.Update(aircraft);
+            _context.SaveChanges();
+        }
     }
 }
