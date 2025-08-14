@@ -29,5 +29,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.AircraftMaintenances.Update(aircraftMaintenance);
             _context.SaveChanges();
         }
+
+        public void Delete(AircraftMaintenance aircraftMaintenance) // Delete an aircraft maintenance record
+        {
+            _context.AircraftMaintenances.Remove(aircraftMaintenance);
+            _context.SaveChanges();
+        }
     }
 }
