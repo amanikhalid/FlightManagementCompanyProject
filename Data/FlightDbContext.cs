@@ -460,6 +460,7 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<CrewMember>()
                 .Property(cm => cm.CrewId)
                 .ValueGeneratedOnAdd() // Configure CrewId to be auto-incremented
+                .HasColumnType("int"); // Specify the column type as int
 
 
 
