@@ -537,7 +537,9 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Baggage>()
                 .Property(b => b.TagNumber) // Tag number is required
                 .IsRequired()
-              
+                .HasMaxLength(20) // Maximum length of 20 characters
+
+
 
 
 
