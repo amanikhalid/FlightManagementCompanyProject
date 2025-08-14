@@ -29,5 +29,13 @@ namespace FlightManagementCompanyProject.Repository
             _context.Airports.Update(airport);
             _context.SaveChanges();
         }
+
+        public void Delete(Airport airport) // Delete an airport record
+
+        {
+            _context.Airports.Remove(airport);
+            _context.SaveChanges();
+        }
+
     }
 }
