@@ -22,5 +22,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Airports.Add(airport);
             _context.SaveChanges();
         }
+
+        public void Update(Airport airport) // Update an existing airport record
+     
+        {
+            _context.Airports.Update(airport);
+            _context.SaveChanges();
+        }
     }
 }
