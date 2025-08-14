@@ -517,6 +517,11 @@ namespace FlightManagementCompanyProject.Data
                 .HasColumnType("nvarchar(30)"); // Specify the column type as nvarchar(30)
 
 
+            // Baggage Entity Configuration
+            modelBuilder.Entity<Baggage>()
+               
+
+
 
 
 
