@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Data
 {
-    class SeeData
+    public static class SeeData
     {
+
     }
 }
