@@ -533,6 +533,10 @@ namespace FlightManagementCompanyProject.Data
                 .IsRequired()
                 .HasColumnType("decimal(18,2)"); // Specify the column type as decimal with precision 18 and scale 2
 
+            // TagNumber configuration
+            modelBuilder.Entity<Baggage>()
+              
+
 
 
 
