@@ -486,6 +486,8 @@ namespace FlightManagementCompanyProject.Data
             // Navigation properties for CrewMember
             // one-to-many relationship with FlightCrew
             modelBuilder.Entity<CrewMember>()
+                .HasMany(cm => cm.FlightCrews) // A crew member can be part of many flight crews
+              
 
 
 
