@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Service
 {
-    class FlightService
+    public class FlightService
     {
+        
     }
 }
