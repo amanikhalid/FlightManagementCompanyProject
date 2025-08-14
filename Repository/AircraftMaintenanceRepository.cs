@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,12 @@ namespace FlightManagementCompanyProject.Repository
         public AircraftMaintenanceRepository(FlightDbContext context) // Initialize the context
         {
             _context = context;
+        }
+
+        public void Add(AircraftMaintenance aircraftMaintenance) // Add a new aircraft maintenance record
+        {
+            _context.AircraftMaintenances.Add(aircraftMaintenance);
+            _context.SaveChanges();
         }
     }
 }
