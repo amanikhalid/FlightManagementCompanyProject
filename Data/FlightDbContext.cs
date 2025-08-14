@@ -519,7 +519,8 @@ namespace FlightManagementCompanyProject.Data
 
             // Baggage Entity Configuration
             modelBuilder.Entity<Baggage>()
-               
+                .HasKey(b => b.BaggageId); // Set BaggageId as the primary key
+
 
 
 
