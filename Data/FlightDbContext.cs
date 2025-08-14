@@ -489,6 +489,7 @@ namespace FlightManagementCompanyProject.Data
                 .HasMany(cm => cm.FlightCrews) // A crew member can be part of many flight crews
                 .WithOne(fc => fc.CrewMember) // Each flight crew has one crew member
                 .HasForeignKey(fc => fc.CrewId) // Foreign key in FlightCrew table
+                .OnDelete(DeleteBehavior.NoAction); // Prevent cascading delete for flight crews
 
 
 
