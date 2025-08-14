@@ -459,7 +459,9 @@ namespace FlightManagementCompanyProject.Data
             // CrewMember auto-increment configuration
             modelBuilder.Entity<CrewMember>()
                 .Property(cm => cm.CrewId)
-               
+                .ValueGeneratedOnAdd() // Configure CrewId to be auto-incremented
+
+
 
 
 
