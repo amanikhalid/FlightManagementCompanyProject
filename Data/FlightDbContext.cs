@@ -531,7 +531,8 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<Baggage>()
                 .Property(b => b.Weight) // Weight is required
                 .IsRequired()
-               
+                .HasColumnType("decimal(18,2)"); // Specify the column type as decimal with precision 18 and scale 2
+
 
 
 
