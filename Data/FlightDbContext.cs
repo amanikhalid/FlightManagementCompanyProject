@@ -456,6 +456,11 @@ namespace FlightManagementCompanyProject.Data
             modelBuilder.Entity<CrewMember>()
                 .HasKey(cm => cm.CrewId); // Set CrewMemberId as the primary key
 
+            // CrewMember auto-increment configuration
+            modelBuilder.Entity<CrewMember>()
+                .Property(cm => cm.CrewId)
+               
+
 
 
 
