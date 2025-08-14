@@ -497,7 +497,10 @@ namespace FlightManagementCompanyProject.Data
 
             // FlightCrew auto-increment configuration
             modelBuilder.Entity<FlightCrew>()
-                .HasOne(fc => fc.Flight) // Each flight crew belongs to one flight 
+                .HasOne(fc => fc.Flight) // Each flight crew belongs to one flight
+                .WithMany(f => f.FlightCrews) // A flight can have many flight crews
+
+
 
 
 
