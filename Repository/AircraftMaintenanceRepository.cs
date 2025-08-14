@@ -38,5 +38,8 @@ namespace FlightManagementCompanyProject.Repository
 
         public AircraftMaintenance GetById(int id) => _context.AircraftMaintenances.Find(id); // Get an aircraft maintenance record by ID
 
+        public IEnumerable<AircraftMaintenance> GetAll() => _context.AircraftMaintenances.ToList(); // Get all aircraft maintenance records
+
+
     }
 }
