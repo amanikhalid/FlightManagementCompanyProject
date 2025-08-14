@@ -37,5 +37,7 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public Airport GetById(int id) => _context.Airports.Find(id); // Get an airport record by ID
+
     }
 }
