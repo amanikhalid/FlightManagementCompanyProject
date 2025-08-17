@@ -13,7 +13,7 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(AircraftMaintenance aircraftMaintenance); // Delete an aircraft maintenance record
         IEnumerable<AircraftMaintenance> GetAll(); // Get all aircraft maintenance records
         AircraftMaintenance GetById(int id); // Get an aircraft maintenance record by ID
-
+        void Update(AircraftMaintenance aircraftMaintenance); // Update an existing aircraft maintenance record
 
     }
 }
