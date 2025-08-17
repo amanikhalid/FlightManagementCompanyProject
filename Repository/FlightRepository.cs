@@ -61,5 +61,14 @@ namespace FlightManagementCompanyProject.Repository
                 .ToList();
         }
 
+        public Flight GetByIdIncludingDetails(int id) // Get a flight record by ID including related details
+        {
+            return _context.Flights
+                .Include(f => f.Aircraft)
+                .Include(f => f.Tickets)
+                .FirstOrDefault(f => f.FlightId == id);
+
+        }
+
     }
 }
