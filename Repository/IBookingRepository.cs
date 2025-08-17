@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IBookingRepository
     {
         void Add(Booking booking); // Add a new booking record
+        void Delete(Booking booking); // Delete a booking record
     }
 }
