@@ -13,5 +13,6 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(CrewMember crewMember); // Delete a crew member record
         IEnumerable<CrewMember> GetAll(); // Get all crew member records
         IEnumerable<CrewMember> GetAvailableCrew(DateTime departureDate); // Get available crew members for a specific departure date
+        CrewMember GetById(int id); // Get a crew member record by ID
     }
 }
