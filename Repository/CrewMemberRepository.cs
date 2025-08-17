@@ -42,9 +42,10 @@ namespace FlightManagementCompanyProject.Repository
 
         public IEnumerable<CrewMember> GetCrewMembersByRole(string role) // Get crew members by their role
         {
-           
+            return _context.CrewMembers // Access the CrewMembers DbSet
+
         }
-        
+
 
     }
 }
