@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-   public class BookingRepository
+   public class BookingRepository : IBookingRepository // Interface implementation for booking repository
     {
     }
 }
