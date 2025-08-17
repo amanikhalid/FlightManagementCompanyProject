@@ -11,5 +11,6 @@ namespace FlightManagementCompanyProject.Repository
     {
         void Add(Route route); // Add a new route record
         void Delete(Route route); // Delete a route record
+        IEnumerable<Route> GetAll(); // Get all route records
     }
 }
