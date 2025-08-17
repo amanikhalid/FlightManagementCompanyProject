@@ -54,6 +54,7 @@ namespace FlightManagementCompanyProject.Repository
             return _context.CrewMembers
                     .Where(cm => !cm.FlightCrews // Check if the crew member is not assigned to any flight crew
                       .Any(fc => fc.Flight.DepartureUtc.Date == departureDate.Date)) // Check if the crew member is not assigned to any flight crew on the specified departure date
+                      .ToList(); // Convert the result to a list and return it
         }
 
 
