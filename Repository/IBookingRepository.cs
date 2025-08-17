@@ -14,5 +14,6 @@ namespace FlightManagementCompanyProject.Repository
         IEnumerable<Booking> GetAll(); // Get all booking records
         IEnumerable<Booking> GetBookingsByDateRange(DateTime from, DateTime to); // Get bookings within a specific date range
         Booking GetById(int id); // Get a booking record by ID
+        void Update(Booking booking); // Update an existing booking record
     }
 }
