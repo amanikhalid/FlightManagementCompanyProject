@@ -10,6 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IPassengerRepository
     {
         void Add(Passenger passenger); // Add a new passenger record
-
+        void Delete(Passenger passenger); // Delete a passenger record
     }
 }
