@@ -13,5 +13,6 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(Flight flight); // Delete a flight record
         IEnumerable<Flight> GetAll(); // Get all flight records
         Flight GetById(int id); // Get a flight record by ID
+        Flight GetByIdIncludingDetails(int id); // Get a flight record by ID including related details
     }
 }
