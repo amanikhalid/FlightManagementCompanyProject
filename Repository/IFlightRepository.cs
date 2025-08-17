@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IFlightRepository
     {
         void Add(Flight flight); // Add a new flight record
+        void Delete(Flight flight); // Delete a flight record
     }
 }
