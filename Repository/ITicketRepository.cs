@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface ITicketRepository
     {
         void Add(Ticket ticket); // Add a new ticket record
+        void Delete(Ticket ticket); // Delete a ticket record
     }
 }
