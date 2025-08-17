@@ -23,5 +23,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.CrewMembers.Add(crewMember);
             _context.SaveChanges();
         }
+
+        public void Update(CrewMember crewMember) // Update an existing crew member record
+        {
+            _context.CrewMembers.Update(crewMember);
+            _context.SaveChanges();
+        }
     }
 }
