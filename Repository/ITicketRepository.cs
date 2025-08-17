@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    interface ITicketRepository
+    public interface ITicketRepository
     {
     }
 }
