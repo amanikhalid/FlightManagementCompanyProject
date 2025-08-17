@@ -49,8 +49,10 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public IEnumerable<CrewMember> GetAvailableCrew(DateTime departureDate) // Get available crew members for a specific departure date
+
         {
-          
+            return _context.CrewMembers
+                    .Where(cm => !cm.FlightCrews // Check if the crew member is not assigned to any flight crew
         }
 
 
