@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    public class BaggageRepository
+    public class BaggageRepository : IBaggageRepository // Interface implementation for baggage repository
     {
     }
 }
