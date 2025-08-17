@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    interface IAircraftMaintenanceRepository
+    public interface IAircraftMaintenanceRepository
     {
+
     }
 }
