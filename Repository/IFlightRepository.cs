@@ -17,5 +17,6 @@ namespace FlightManagementCompanyProject.Repository
         Flight GetFlightByTicket(int ticketId); // Get the flight associated with a specific ticket
         IEnumerable<Flight> GetFlightsByDateRange(DateTime from, DateTime to); // Get flights within a specific date range
         IEnumerable<Flight> GetFlightsByRoute(int routeId); // Get flights by route ID
+        void Update(Flight flight); // Update an existing flight record
     }
 }
