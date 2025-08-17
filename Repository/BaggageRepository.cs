@@ -10,5 +10,10 @@ namespace FlightManagementCompanyProject.Repository
     public class BaggageRepository : IBaggageRepository // Interface implementation for baggage repository
     {
         private readonly FlightDbContext _context; // Constructor to inject the DbContext
+
+        public BaggageRepository(FlightDbContext context) // Initialize the context
+        {
+            _context = context;
+        }
     }
 }
