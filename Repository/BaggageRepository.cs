@@ -22,5 +22,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Baggages.Add(baggage);
             _context.SaveChanges();
         }
+
+        public void Update(Baggage baggage) // Update an existing baggage record
+        {
+            _context.Baggages.Update(baggage);
+            _context.SaveChanges();
+        }
+
     }
 }
