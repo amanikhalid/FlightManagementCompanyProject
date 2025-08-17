@@ -13,5 +13,6 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(Baggage baggage); // Delete a baggage record
         IEnumerable<Baggage> GetAll(); // Get all baggage records
         Baggage GetById(int id); // Get a baggage record by ID
+        void Update(Baggage baggage); // Update an existing baggage record
     }
 }
