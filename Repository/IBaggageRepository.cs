@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IBaggageRepository
     {
         void Add(Baggage baggage); // Add a new baggage record
+        void Delete(Baggage baggage); // Delete a baggage record
     }
 }
