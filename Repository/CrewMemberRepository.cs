@@ -35,5 +35,9 @@ namespace FlightManagementCompanyProject.Repository
             _context.CrewMembers.Remove(crewMember);
             _context.SaveChanges();
         }
+
+        public CrewMember GetById(int id) => _context.CrewMembers.Find(id); // Get a crew member record by ID
+
+
     }
 }
