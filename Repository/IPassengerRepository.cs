@@ -13,5 +13,7 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(Passenger passenger); // Delete a passenger record
         IEnumerable<Passenger> GetAll(); // Get all passenger records
         Passenger GetById(int id); // Get a passenger record by ID
+
+        void Update(Passenger passenger);// Update an existing passenger record
     }
 }
