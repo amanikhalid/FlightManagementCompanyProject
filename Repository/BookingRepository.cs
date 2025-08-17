@@ -10,5 +10,11 @@ namespace FlightManagementCompanyProject.Repository
    public class BookingRepository : IBookingRepository // Interface implementation for booking repository
     {
         private readonly FlightDbContext _context; // Constructor to inject the DbContext
+
+        public BookingRepository(FlightDbContext context) // Initialize the context
+        {
+            _context = context;
+        }
+
     }
 }
