@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlightManagementCompanyProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace FlightManagementCompanyProject.Repository
 {
     public interface IAircraftMaintenanceRepository
     {
+        void Add(AircraftMaintenance aircraftMaintenance); // Add a new aircraft maintenance record
 
     }
 }
