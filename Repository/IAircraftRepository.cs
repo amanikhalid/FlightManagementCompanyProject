@@ -14,5 +14,6 @@ namespace FlightManagementCompanyProject.Repository
         IEnumerable<Aircraft> GetAll(); // Get all aircraft records
         Aircraft GetById(int id); // Get an aircraft record by ID
         IEnumerable<Aircraft> GetDueForMaintenance(DateTime beforeDate); // Get aircraft due for maintenance before a specific date
+        void Update(Aircraft aircraft); // Update an existing aircraft record
     }
 }
