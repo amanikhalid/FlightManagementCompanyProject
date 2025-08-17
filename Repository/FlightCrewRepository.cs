@@ -37,5 +37,7 @@ namespace FlightManagementCompanyProject.Repository
 
         public FlightCrew GetById(int id) => _context.FlightCrews.Find(id); // Get a flight crew record by ID
 
+        public IEnumerable<FlightCrew> GetAll() => _context.FlightCrews.ToList(); // Get all flight crew records
+
     }
 }
