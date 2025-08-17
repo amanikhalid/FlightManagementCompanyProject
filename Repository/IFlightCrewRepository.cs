@@ -12,5 +12,7 @@ namespace FlightManagementCompanyProject.Repository
         void Add(FlightCrew flightCrew); // Add a new flight crew record
         void Delete(FlightCrew flightCrew); // Delete a flight crew record
         IEnumerable<FlightCrew> GetAll(); // Get all flight crew records
+
+        FlightCrew GetById(int id); // Get a flight crew record by ID
     }
 }
