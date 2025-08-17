@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    public class CrewMemberRepository
+    public class CrewMemberRepository : ICrewMemberRepository // Interface implementation for crew member repository
     {
     }
 }
