@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlightManagementCompanyProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace FlightManagementCompanyProject.Repository
 {
     public interface IAirportRepository
     {
+        void Add(Airport airport); // Add a new airport record
     }
 }
