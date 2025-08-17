@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,12 @@ namespace FlightManagementCompanyProject.Repository
        
         {
             _context = context;
+        }
+
+        public void Add(FlightCrew flightCrew) // Add a new flight crew record
+        {
+            _context.FlightCrews.Add(flightCrew);
+            _context.SaveChanges();
         }
     }
 }
