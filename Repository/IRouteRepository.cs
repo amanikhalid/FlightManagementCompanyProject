@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IRouteRepository
     {
         void Add(Route route); // Add a new route record
+        void Delete(Route route); // Delete a route record
     }
 }
