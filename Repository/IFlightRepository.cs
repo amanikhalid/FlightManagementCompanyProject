@@ -14,5 +14,6 @@ namespace FlightManagementCompanyProject.Repository
         IEnumerable<Flight> GetAll(); // Get all flight records
         Flight GetById(int id); // Get a flight record by ID
         Flight GetByIdIncludingDetails(int id); // Get a flight record by ID including related details
+        Flight GetFlightByTicket(int ticketId); // Get the flight associated with a specific ticket
     }
 }
