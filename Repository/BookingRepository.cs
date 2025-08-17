@@ -22,5 +22,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.Bookings.Add(booking);
             _context.SaveChanges();
         }
+
+        public void Update(Booking booking) // Update an existing booking record
+        {
+            _context.Bookings.Update(booking);
+            _context.SaveChanges();
+        }
     }
 }
