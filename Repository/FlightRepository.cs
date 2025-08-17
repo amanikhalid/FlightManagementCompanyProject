@@ -22,5 +22,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Flights.Add(flight);
             _context.SaveChanges();
         }
+
+        public void Update(Flight flight) // Update an existing flight record
+       
+        {
+            _context.Flights.Update(flight);
+            _context.SaveChanges();
+        }
     }
 }
