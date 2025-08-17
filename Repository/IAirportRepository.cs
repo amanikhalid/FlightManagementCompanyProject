@@ -13,5 +13,6 @@ namespace FlightManagementCompanyProject.Repository
         void Delete(Airport airport); // Delete an airport record
         IEnumerable<Airport> GetAll(); // Get all airport records
         Airport GetById(int id); // Get an airport record by ID
+        void Update(Airport airport); // Update an existing airport record
     }
 }
