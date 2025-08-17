@@ -35,5 +35,6 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public Baggage GetById(int id) => _context.Baggages.Find(id); // Get a baggage record by ID
     }
 }
