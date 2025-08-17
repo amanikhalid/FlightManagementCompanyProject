@@ -43,6 +43,8 @@ namespace FlightManagementCompanyProject.Repository
         public IEnumerable<CrewMember> GetCrewMembersByRole(string role) // Get crew members by their role
         {
             return _context.CrewMembers // Access the CrewMembers DbSet
+                   .Where(cm => cm.Role.ToString().Equals(role, StringComparison.OrdinalIgnoreCase)) // Filter by Role -- .Equals(role, StringComparison.OrdinalIgnoreCase) compares the role ignoring case.
+                .ToList();
 
         }
 
