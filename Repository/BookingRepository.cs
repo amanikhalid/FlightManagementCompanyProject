@@ -45,5 +45,12 @@ namespace FlightManagementCompanyProject.Repository
                 .Where(b => b.BookingDate >= from && b.BookingDate <= to)
                 .ToList();
         }
+
+        public IEnumerable<Booking> GetBookingsByPassenger(int passengerId) // Get bookings for a specific passenger
+        {
+            return _context.Bookings
+                .Where(b => b.PassengerId == passengerId)
+                .ToList();
+        }
     }
 }
