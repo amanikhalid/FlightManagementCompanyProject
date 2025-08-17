@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    public class FlightCrewRepository
+    public class FlightCrewRepository : IFlightCrewRepository // Interface implementation for flight crew repository
     {
         private readonly FlightDbContext _context; // Constructor to inject the DbContext
         public FlightCrewRepository(FlightDbContext context) // Initialize the context
