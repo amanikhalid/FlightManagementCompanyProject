@@ -1,5 +1,6 @@
 ﻿using FlightManagementCompanyProject.Data;
 using FlightManagementCompanyProject.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,21 @@ namespace FlightManagementCompanyProject.Repository
         }
         public Flight GetById(int id) => _context.Flights.Find(id); // Get a flight record by ID
         public IEnumerable<Flight> GetAll() => _context.Flights.ToList(); // Get all flight records
+
+        public IEnumerable<Flight> GetFlightsByDateRange(DateTime from, DateTime to) // Get flights within a specific date range
+        {
+            //return _context.Flights
+            //    .Where(f => f.DepartureUtc >= from && f.ArrivalUtc <= to)
+            //    .ToLi
+            return _context.Flights
+                .Include(f => f.Tickets)
+                .Include(f => f.Route).ThenInclude(r => r.OriginAirport)
+                .Include(f => f.Route).ThenInclude(r => r.DestinationAirport)
+                .Where(f => f.DepartureUtc.Date >= from.Date &&
+                            f.DepartureUtc.Date <= to.Date)
+                .ToList();
+
+        }
 
     }
 }
