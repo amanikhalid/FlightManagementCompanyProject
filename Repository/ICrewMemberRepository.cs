@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface ICrewMemberRepository
     {
         void Add(CrewMember crewMember); // Add a new crew member record
+        void Delete(CrewMember crewMember); // Delete a crew member record
     }
 }
