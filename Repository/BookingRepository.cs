@@ -34,5 +34,7 @@ namespace FlightManagementCompanyProject.Repository
             _context.Bookings.Remove(booking);
             _context.SaveChanges();
         }
+
+        public Booking GetById(int id) => _context.Bookings.Find(id); // Get a booking record by ID
     }
 }
