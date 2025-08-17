@@ -11,6 +11,8 @@ namespace FlightManagementCompanyProject.Repository
     {
         void Add(AircraftMaintenance aircraftMaintenance); // Add a new aircraft maintenance record
         void Delete(AircraftMaintenance aircraftMaintenance); // Delete an aircraft maintenance record
+        IEnumerable<AircraftMaintenance> GetAll(); // Get all aircraft maintenance records
+
 
     }
 }
