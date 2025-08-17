@@ -40,7 +40,11 @@ namespace FlightManagementCompanyProject.Repository
 
         public IEnumerable<CrewMember> GetAll() => _context.CrewMembers.ToList(); // Get all crew member records
 
-
+        public IEnumerable<CrewMember> GetCrewMembersByRole(string role) // Get crew members by their role
+        {
+           
+        }
+        
 
     }
 }
