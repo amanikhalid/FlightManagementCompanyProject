@@ -14,5 +14,6 @@ namespace FlightManagementCompanyProject.Repository
         IEnumerable<FlightCrew> GetAll(); // Get all flight crew records
 
         FlightCrew GetById(int id); // Get a flight crew record by ID
+        void Update(FlightCrew flightCrew); // Update an existing flight crew record
     }
 }
