@@ -38,5 +38,12 @@ namespace FlightManagementCompanyProject.Repository
         public Booking GetById(int id) => _context.Bookings.Find(id); // Get a booking record by ID
 
         public IEnumerable<Booking> GetAll() => _context.Bookings.ToList(); // Get all booking records
+
+        public IEnumerable<Booking> GetBookingsByDateRange(DateTime from, DateTime to) // Get bookings within a specific date range
+        {
+            return _context.Bookings
+                .Where(b => b.BookingDate >= from && b.BookingDate <= to)
+                .ToList();
+        }
     }
 }
