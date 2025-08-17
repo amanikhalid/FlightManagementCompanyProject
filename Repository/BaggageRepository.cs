@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,12 @@ namespace FlightManagementCompanyProject.Repository
         public BaggageRepository(FlightDbContext context) // Initialize the context
         {
             _context = context;
+        }
+
+        public void Add(Baggage baggage) // Add a new baggage record
+        {
+            _context.Baggages.Add(baggage);
+            _context.SaveChanges();
         }
     }
 }
