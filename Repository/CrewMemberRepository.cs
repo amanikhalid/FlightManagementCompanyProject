@@ -29,5 +29,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.CrewMembers.Update(crewMember);
             _context.SaveChanges();
         }
+
+        public void Delete(CrewMember crewMember) // Delete a crew member record
+        {
+            _context.CrewMembers.Remove(crewMember);
+            _context.SaveChanges();
+        }
     }
 }
