@@ -15,5 +15,7 @@ namespace FlightManagementCompanyProject.Repository
         IEnumerable<CrewMember> GetAvailableCrew(DateTime departureDate); // Get available crew members for a specific departure date
         CrewMember GetById(int id); // Get a crew member record by ID
         IEnumerable<CrewMember> GetCrewMembersByRole(string role); // Get crew members by their role
+
+        void Update(CrewMember crewMember); // Update an existing crew member record
     }
 }
