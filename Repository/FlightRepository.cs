@@ -36,5 +36,7 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
         public Flight GetById(int id) => _context.Flights.Find(id); // Get a flight record by ID
+        public IEnumerable<Flight> GetAll() => _context.Flights.ToList(); // Get all flight records
+
     }
 }
