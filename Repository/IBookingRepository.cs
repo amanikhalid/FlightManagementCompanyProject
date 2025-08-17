@@ -12,5 +12,6 @@ namespace FlightManagementCompanyProject.Repository
         void Add(Booking booking); // Add a new booking record
         void Delete(Booking booking); // Delete a booking record
         IEnumerable<Booking> GetAll(); // Get all booking records
+        IEnumerable<Booking> GetBookingsByDateRange(DateTime from, DateTime to); // Get bookings within a specific date range
     }
 }
