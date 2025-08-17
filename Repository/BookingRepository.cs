@@ -36,5 +36,7 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public Booking GetById(int id) => _context.Bookings.Find(id); // Get a booking record by ID
+
+        public IEnumerable<Booking> GetAll() => _context.Bookings.ToList(); // Get all booking records
     }
 }
