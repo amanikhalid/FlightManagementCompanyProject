@@ -28,5 +28,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.Bookings.Update(booking);
             _context.SaveChanges();
         }
+
+        public void Delete(Booking booking) // Delete a booking record
+        {
+            _context.Bookings.Remove(booking);
+            _context.SaveChanges();
+        }
     }
 }
