@@ -48,6 +48,14 @@ namespace FlightManagementCompanyProject.Repository
 
         }
 
+        public IEnumerable<CrewMember> GetAvailableCrew(DateTime departureDate) // Get available crew members for a specific departure date
+        {
+          
+        }
+
+
+
+
 
     }
 }
