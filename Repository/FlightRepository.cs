@@ -70,5 +70,14 @@ namespace FlightManagementCompanyProject.Repository
 
         }
 
+        public Flight GetFlightByTicket(int ticketId) // Get the flight associated with a specific ticket
+        {
+            return _context.Tickets
+                .Where(t => t.TicketId == ticketId)
+                .Select(t => t.Flight)
+                .FirstOrDefault();
+        }
+
+
     }
 }
