@@ -36,5 +36,7 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public Baggage GetById(int id) => _context.Baggages.Find(id); // Get a baggage record by ID
+
+        public IEnumerable<Baggage> GetAll() => _context.Baggages.ToList(); // Get all baggage records
     }
 }
