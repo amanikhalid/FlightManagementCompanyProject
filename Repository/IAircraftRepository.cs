@@ -10,5 +10,6 @@ namespace FlightManagementCompanyProject.Repository
     public interface IAircraftRepository
     {
         void Add(Aircraft aircraft); // Add a new aircraft record
+        void Delete(Aircraft aircraft); // Delete an aircraft record
     }
 }
