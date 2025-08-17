@@ -29,5 +29,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public void Delete(FlightCrew flightCrew) // Delete a flight crew record
+        {
+            _context.FlightCrews.Remove(flightCrew);
+            _context.SaveChanges();
+        }
+
     }
 }
