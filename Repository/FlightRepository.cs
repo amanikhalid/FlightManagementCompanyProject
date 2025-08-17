@@ -29,5 +29,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.Flights.Update(flight);
             _context.SaveChanges();
         }
+
+        public void Delete(Flight flight) // Delete a flight record
+        {
+            _context.Flights.Remove(flight);
+            _context.SaveChanges();
+        }
     }
 }
