@@ -10,5 +10,10 @@ namespace FlightManagementCompanyProject.Repository
     public class FlightRepository : IFlightRepository // Interface implementation for flight repository
     {
         private readonly FlightDbContext _context; // Constructor to inject the DbContext
+        public FlightRepository(FlightDbContext context) // Initialize the context
+      
+        {
+            _context = context;
+        }
     }
 }
