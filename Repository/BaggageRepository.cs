@@ -29,5 +29,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public void Delete(Baggage baggage) // Delete a baggage record
+        {
+            _context.Baggages.Remove(baggage);
+            _context.SaveChanges();
+        }
+
     }
 }
