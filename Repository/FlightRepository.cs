@@ -54,5 +54,12 @@ namespace FlightManagementCompanyProject.Repository
 
         }
 
+        public IEnumerable<Flight> GetFlightsByRoute(int routeId) // Get flights by route ID
+        {
+            return _context.Flights
+                .Where(f => f.RouteId == routeId)
+                .ToList();
+        }
+
     }
 }
