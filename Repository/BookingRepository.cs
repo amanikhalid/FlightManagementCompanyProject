@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,10 @@ namespace FlightManagementCompanyProject.Repository
             _context = context;
         }
 
+        public void Add(Booking booking) // Add a new booking record
+        {
+            _context.Bookings.Add(booking);
+            _context.SaveChanges();
+        }
     }
 }
