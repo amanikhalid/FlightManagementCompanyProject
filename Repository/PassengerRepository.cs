@@ -36,5 +36,8 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public Passenger GetById(int id) => _context.Passengers.Find(id); // Method to get a passenger record by ID
+
+
     }
 }
