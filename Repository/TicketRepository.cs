@@ -54,6 +54,10 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public IEnumerable<Ticket> GetTicketsByPassengerId(int passengerId) // Method to get tickets by passenger ID
+
         {
+            var bookingId = _context.Bookings // GetBookingIdByPassengerId(passengerId) 
+               
+
         }
 }
