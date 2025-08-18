@@ -10,5 +10,11 @@ namespace FlightManagementCompanyProject.Repository
     public class PassengerRepository : IPassengerRepository // Interface implementation for PassengerRepository
     {
         private readonly FlightDbContext _context; // Constructor to initialize the DbContext
+
+        public PassengerRepository(FlightDbContext context) // Constructor to initialize the DbContext
+        {
+            _context = context;
+        }
+
     }
 }
