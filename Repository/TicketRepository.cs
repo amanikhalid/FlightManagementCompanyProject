@@ -60,5 +60,8 @@ namespace FlightManagementCompanyProject.Repository
                 .Where(b => b.PassengerId == passengerId) // Get the booking ID by passenger ID
                  .Select(b => b.BookingId) // Select the BookingId
                   .FirstOrDefault(); // Get the first booking ID or default if not found
+
+            return _context.Tickets // GetTicketsByBookingId(bookingId);
+               
         }
 }
