@@ -45,7 +45,8 @@ namespace FlightManagementCompanyProject.Repository
             var bookingId = _context.Bookings // GetBookingIdByBookingRef(bookingRef);
                 .Where(b => b.BookingRef == bookingRef) // Get the booking ID by booking reference
                 .Select(b => b.BookingId) // Select the BookingId
-          
+                .FirstOrDefault(); // Get the first booking ID or default if not found
+
 
 
 
