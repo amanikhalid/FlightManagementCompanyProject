@@ -63,5 +63,6 @@ namespace FlightManagementCompanyProject.Repository
 
             return _context.Tickets // GetTicketsByBookingId(bookingId);
                  .Where(t => t.BookingId == bookingId) // Filter tickets by the booking ID
+                  .ToList(); // Return the list of tickets associated with the booking ID
         }
 }
