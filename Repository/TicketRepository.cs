@@ -43,7 +43,11 @@ namespace FlightManagementCompanyProject.Repository
         public IEnumerable<Ticket> GetTicketsByBookingRef(string bookingRef) // Method to get tickets by booking reference
         {
             var bookingId = _context.Bookings // GetBookingIdByBookingRef(bookingRef);
+                .Where(b => b.BookingRef == bookingRef) // Get the booking ID by booking reference
                
+
+
+
 
         }
     }
