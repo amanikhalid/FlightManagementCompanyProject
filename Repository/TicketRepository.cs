@@ -30,5 +30,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public void Delete(Ticket ticket) // Method to delete a ticket record
+        {
+            _context.Tickets.Remove(ticket);
+            _context.SaveChanges();
+        }
+
     }
 }
