@@ -38,5 +38,7 @@ namespace FlightManagementCompanyProject.Repository
 
         public Ticket GetById(int id) => _context.Tickets.Find(id); // Method to get a ticket record by ID
 
+        public IEnumerable<Ticket> GetAll() => _context.Tickets.ToList(); // Method to get all ticket records
+
     }
 }
