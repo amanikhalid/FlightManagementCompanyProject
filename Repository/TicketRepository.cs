@@ -47,6 +47,8 @@ namespace FlightManagementCompanyProject.Repository
                 .Select(b => b.BookingId) // Select the BookingId
                 .FirstOrDefault(); // Get the first booking ID or default if not found
 
+            return _context.Tickets // GetTicketsByBookingId(bookingId); 
+             
 
 
 
