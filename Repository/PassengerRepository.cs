@@ -29,5 +29,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Passengers.Update(passenger);
             _context.SaveChanges();
         }
+        public void Delete(Passenger passenger) // Method to delete a passenger record
+       
+        {
+            _context.Passengers.Remove(passenger);
+            _context.SaveChanges();
+        }
+
     }
 }
