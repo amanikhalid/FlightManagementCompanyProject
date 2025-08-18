@@ -23,5 +23,12 @@ namespace FlightManagementCompanyProject.Repository
             _context.Tickets.Add(ticket);
             _context.SaveChanges();
         }
+
+        public void Update(Ticket ticket) // Method to update an existing ticket record
+        {
+            _context.Tickets.Update(ticket);
+            _context.SaveChanges();
+        }
+
     }
 }
