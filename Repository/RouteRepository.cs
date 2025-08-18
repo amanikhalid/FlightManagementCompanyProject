@@ -36,5 +36,7 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public Route GetById(int id) => _context.Routes.Find(id); // Method to get a route record by ID
+
+        public IEnumerable<Route> GetAll() => _context.Routes.ToList(); // Method to get all route records
     }
 }
