@@ -38,6 +38,8 @@ namespace FlightManagementCompanyProject.Repository
 
         public Passenger GetById(int id) => _context.Passengers.Find(id); // Method to get a passenger record by ID
 
+        public IEnumerable<Passenger> GetAll() => _context.Passengers.ToList(); // Method to get all passenger records
+
 
     }
 }
