@@ -62,6 +62,6 @@ namespace FlightManagementCompanyProject.Repository
                   .FirstOrDefault(); // Get the first booking ID or default if not found
 
             return _context.Tickets // GetTicketsByBookingId(bookingId);
-               
+                 .Where(t => t.BookingId == bookingId) // Filter tickets by the booking ID
         }
 }
