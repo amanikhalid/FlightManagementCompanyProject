@@ -24,5 +24,10 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public void Update(Passenger passenger) // Method to update an existing passenger record
+        {
+            _context.Passengers.Update(passenger);
+            _context.SaveChanges();
+        }
     }
 }
