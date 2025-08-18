@@ -18,7 +18,7 @@ namespace FlightManagementCompanyProject.Repository
         }
 
         public void Add(Ticket ticket) // Method to add a new ticket record
-       
+
         {
             _context.Tickets.Add(ticket);
             _context.SaveChanges();
@@ -40,5 +40,9 @@ namespace FlightManagementCompanyProject.Repository
 
         public IEnumerable<Ticket> GetAll() => _context.Tickets.ToList(); // Method to get all ticket records
 
+        public IEnumerable<Ticket> GetTicketsByBookingRef(string bookingRef) // Method to get tickets by booking reference
+        {
+
+        }
     }
 }
