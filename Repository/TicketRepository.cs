@@ -51,10 +51,9 @@ namespace FlightManagementCompanyProject.Repository
                 .Where(t => t.BookingId == bookingId) // Filter tickets by the booking ID
                 .ToList(); // Return the list of tickets associated with the booking ID
 
-
-
-
-
         }
-    }
+
+        public IEnumerable<Ticket> GetTicketsByPassengerId(int passengerId) // Method to get tickets by passenger ID
+        {
+        }
 }
