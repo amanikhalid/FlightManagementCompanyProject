@@ -36,5 +36,7 @@ namespace FlightManagementCompanyProject.Repository
             _context.SaveChanges();
         }
 
+        public Ticket GetById(int id) => _context.Tickets.Find(id); // Method to get a ticket record by ID
+
     }
 }
