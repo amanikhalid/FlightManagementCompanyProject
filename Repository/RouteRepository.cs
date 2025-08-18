@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,10 @@ namespace FlightManagementCompanyProject.Repository
             _context = context;
         }
 
+        public void Add(Route route) // Method to add a new route record
+        {
+            _context.Routes.Add(route);
+            _context.SaveChanges();
+        }
     }
 }
