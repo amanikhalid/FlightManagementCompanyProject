@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlightManagementCompanyProject.Repository
 {
-    public class RouteRepository
+    public class RouteRepository : IRouteRepository // Interface implementation for RouteRepository
     {
     }
 }
