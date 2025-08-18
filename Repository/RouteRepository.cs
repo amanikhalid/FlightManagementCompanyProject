@@ -22,5 +22,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.Routes.Add(route);
             _context.SaveChanges();
         }
+
+        public void Update(Route route) // Method to update an existing route record
+        {
+            _context.Routes.Update(route);
+            _context.SaveChanges();
+        }
     }
 }
