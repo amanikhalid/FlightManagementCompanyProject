@@ -34,5 +34,7 @@ namespace FlightManagementCompanyProject.Repository
             _context.Routes.Remove(route);
             _context.SaveChanges();
         }
+
+        public Route GetById(int id) => _context.Routes.Find(id); // Method to get a route record by ID
     }
 }
