@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,13 @@ namespace FlightManagementCompanyProject.Repository
         public TicketRepository(FlightDbContext context) // Constructor to initialize the DbContext
         {
             _context = context;
+        }
+
+        public void Add(Ticket ticket) // Method to add a new ticket record
+       
+        {
+            _context.Tickets.Add(ticket);
+            _context.SaveChanges();
         }
     }
 }
