@@ -28,5 +28,11 @@ namespace FlightManagementCompanyProject.Repository
             _context.Routes.Update(route);
             _context.SaveChanges();
         }
+
+        public void Delete(Route route) // Method to delete a route record
+        {
+            _context.Routes.Remove(route);
+            _context.SaveChanges();
+        }
     }
 }
