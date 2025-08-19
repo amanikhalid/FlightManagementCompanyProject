@@ -48,5 +48,11 @@ namespace FlightManagementCompanyProject.Service
 
         }
 
+        public void CreateSampleData() // Method to create sample data for testing or demonstration purposes
+        { 
+
+        }
+
+       
     }
 }
