@@ -44,7 +44,7 @@ namespace FlightManagementCompanyProject.Service
             _airportRepository = new AirportRepository(context); // Initialize airport repository
             _passengerRepository = new PassengerRepository(context); // Initialize passenger repository
             _bookingRepository = new BookingRepository(context); // Initialize booking repository
-
+            _baggageRepository = new BaggageRepository(context); // Initialize baggage repository
 
         }
 
