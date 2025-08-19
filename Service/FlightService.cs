@@ -165,14 +165,15 @@ namespace FlightManagementCompanyProject.Service
                 };
 
 
-                foreach (var p in passengers) // Iterate through each passenger in the list
-                    _passengerRepository.Add(p);
-
+                foreach (var passenger in passengers) // Iterate through each passenger in the list
+                {
+                    _passengerRepository.Add(passenger);
+                }
 
             }
 
 
-                }   }
+    }   }
 
 
 } 
