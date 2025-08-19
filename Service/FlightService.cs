@@ -28,6 +28,7 @@ namespace FlightManagementCompanyProject.Service
         private readonly AirportRepository _airportRepository; // Repository for airport data access
         private readonly PassengerRepository _passengerRepository; // Repository for passenger data access
         private readonly BookingRepository _bookingRepository; // Repository for booking data access
+        private readonly BaggageRepository _baggageRepository; // Repository for baggage data access
 
     }
 }
