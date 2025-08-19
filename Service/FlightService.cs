@@ -87,8 +87,13 @@ namespace FlightManagementCompanyProject.Service
             // 2. Airport data creation
             if (!_airportRepository.GetAll().Any())
             {
-                var airports = new List<Airport>
+                var airports = new List<Airport> 
                 {
+                      new Airport { IATA = "MCT", Name = "Muscat International Airport",    City = "Muscat",  Country = "Oman",                 TimeZone = "Asia/Muscat" },
+        new Airport { IATA = "SLL", Name = "Salalah International Airport",   City = "Salalah", Country = "Oman",                 TimeZone = "Asia/Muscat" },
+        new Airport { IATA = "OHS", Name = "Sohar Airport",                   City = "Sohar",   Country = "Oman",                 TimeZone = "Asia/Muscat" },
+        new Airport { IATA = "KHS", Name = "Khasab Airport",                  City = "Khasab",  Country = "Oman",                 TimeZone = "Asia/Muscat" },
+        new Airport { IATA = "DQM", Name = "Duqm International Airport",      City = "Duqm",    Country = "Oman",                 TimeZone = "Asia/Muscat" },
 
                 }
 
