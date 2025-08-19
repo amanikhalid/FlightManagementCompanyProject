@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlightManagementCompany.Data; // FlightManagementCompany.Data namespace for DbContext
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
