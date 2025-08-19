@@ -1,4 +1,5 @@
 ﻿using FlightManagementCompany.Data; // FlightManagementCompany.Data namespace for DbContext
+using FlightManagementCompany.DTO; // Data Transfer Objects for flight information
 using System;
 using System.Collections.Generic;
 using System.Linq;
