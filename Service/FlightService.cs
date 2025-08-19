@@ -157,6 +157,11 @@ namespace FlightManagementCompanyProject.Service
         new Passenger { FullName = "Khalifa Al‑Mazrouei",    PassportNo = "AE200013", Nationality = "Emirati", DOB = new DateTime(1985, 12, 4) },
         new Passenger { FullName = "Maryam Al‑Khalifa",      PassportNo = "BH200014", Nationality = "Bahraini",DOB = new DateTime(1994, 2, 27) },
         new Passenger { FullName = "Saad Al‑Otaibi",         PassportNo = "SA200015", Nationality = "Saudi",   DOB = new DateTime(1979, 1, 29) },
+          new Passenger { FullName = "John Smith",             PassportNo = "GB300016", Nationality = "British", DOB = new DateTime(1974, 5, 15) },
+        new Passenger { FullName = "Emily Johnson",          PassportNo = "US300017", Nationality = "American",DOB = new DateTime(1988, 9, 23) },
+        new Passenger { FullName = "Rajesh Kumar",           PassportNo = "IN300018", Nationality = "Indian",  DOB = new DateTime(1978, 9, 3) },
+        new Passenger { FullName = "Priya Singh",            PassportNo = "IN300019", Nationality = "Indian",  DOB = new DateTime(1995, 2, 25) },
+        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) }
 
 
                 }
