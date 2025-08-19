@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets; // Networking utilities
+using System.Reflection.Metadata.Ecma335; // Metadata for ECMA-335
 using System.Text;
 using System.Threading.Tasks;
 
