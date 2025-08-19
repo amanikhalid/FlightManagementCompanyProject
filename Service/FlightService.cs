@@ -140,9 +140,9 @@ namespace FlightManagementCompanyProject.Service
             // 4. Passenger data creation
             if (!_passengerRepository.GetAll().Any()) 
             {
-                var passengers = new List<Passenger> 
+                var passengers = new List<Passenger>
                 {
-                      new Passenger { FullName = "Salim Al‑Salami",        PassportNo = "OM100001", Nationality = "Omani", DOB = new DateTime(1990, 1, 1) }, 
+                      new Passenger { FullName = "Salim Al‑Salami",        PassportNo = "OM100001", Nationality = "Omani", DOB = new DateTime(1990, 1, 1) },
         new Passenger { FullName = "Ali Al‑Sinani",          PassportNo = "OM100002", Nationality = "Omani", DOB = new DateTime(1992, 2, 2) },
         new Passenger { FullName = "Fatima Al‑Habsi",        PassportNo = "OM100003", Nationality = "Omani", DOB = new DateTime(1995, 3, 3) },
         new Passenger { FullName = "Mohammed Al‑Balushi",    PassportNo = "OM100004", Nationality = "Omani", DOB = new DateTime(1988, 4, 4) },
@@ -161,10 +161,15 @@ namespace FlightManagementCompanyProject.Service
         new Passenger { FullName = "Emily Johnson",          PassportNo = "US300017", Nationality = "American",DOB = new DateTime(1988, 9, 23) },
         new Passenger { FullName = "Rajesh Kumar",           PassportNo = "IN300018", Nationality = "Indian",  DOB = new DateTime(1978, 9, 3) },
         new Passenger { FullName = "Priya Singh",            PassportNo = "IN300019", Nationality = "Indian",  DOB = new DateTime(1995, 2, 25) },
-        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) }
+        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) } 
+                };
 
 
-                }
+                foreach (var p in passengers) // Iterate through each passenger in the list
+                    _passengerRepository.Add(p);
+
+
+            }
 
 
                 }   }
