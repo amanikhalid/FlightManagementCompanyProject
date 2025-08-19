@@ -137,8 +137,16 @@ namespace FlightManagementCompanyProject.Service
                     _routeRepository.Add(r);
             }
 
+            // 4. Passenger data creation
+            if (!_passengerRepository.GetAll().Any())
+            {
+                var passengers = new List<Passenger>
+                {
 
-    }   }
+                }
+
+
+                }   }
 
 
 } 
