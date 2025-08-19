@@ -36,6 +36,7 @@ namespace FlightManagementCompanyProject.Service
 
             _flightRepository = new FlightRepository(context); // Initialize flight repository
             _aircraftRepository = new AircraftRepository(context); // Initialize aircraft repository
+            _routeRepository = new RouteRepository(context); // Initialize route repository
 
 
         }
