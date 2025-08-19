@@ -106,9 +106,16 @@ namespace FlightManagementCompanyProject.Service
 
             }
 
+            // 3. Route data creation
+            if (!_routeRepository.GetAll().Any())
+            {
+                var routes = new List<Route>
+                {
+                
+                }
 
 
-        } }
+                }   }
 
 
-    } }
+} 
