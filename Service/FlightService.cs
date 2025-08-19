@@ -138,10 +138,20 @@ namespace FlightManagementCompanyProject.Service
             }
 
             // 4. Passenger data creation
-            if (!_passengerRepository.GetAll().Any())
+            if (!_passengerRepository.GetAll().Any()) 
             {
-                var passengers = new List<Passenger>
+                var passengers = new List<Passenger> 
                 {
+                      new Passenger { FullName = "Salim Al‑Salami",        PassportNo = "OM100001", Nationality = "Omani", DOB = new DateTime(1990, 1, 1) }, 
+        new Passenger { FullName = "Ali Al‑Sinani",          PassportNo = "OM100002", Nationality = "Omani", DOB = new DateTime(1992, 2, 2) },
+        new Passenger { FullName = "Fatima Al‑Habsi",        PassportNo = "OM100003", Nationality = "Omani", DOB = new DateTime(1995, 3, 3) },
+        new Passenger { FullName = "Mohammed Al‑Balushi",    PassportNo = "OM100004", Nationality = "Omani", DOB = new DateTime(1988, 4, 4) },
+        new Passenger { FullName = "Aisha Al‑Harthy",        PassportNo = "OM100005", Nationality = "Omani", DOB = new DateTime(1993, 5, 5) },
+        new Passenger { FullName = "Othman Al‑Sinani",       PassportNo = "OM100006", Nationality = "Omani", DOB = new DateTime(1990, 7, 31) },
+        new Passenger { FullName = "Nadia Al‑Rawahi",        PassportNo = "OM100007", Nationality = "Omani", DOB = new DateTime(1986, 10, 1) },
+        new Passenger { FullName = "Layla Al‑Zadjali",       PassportNo = "OM100008", Nationality = "Omani", DOB = new DateTime(1996, 8, 25) },
+        new Passenger { FullName = "Huda Al‑Shibli",         PassportNo = "OM100009", Nationality = "Omani", DOB = new DateTime(1998, 3, 22) },
+        new Passenger { FullName = "Yousuf Al‑Hinai",        PassportNo = "OM100010", Nationality = "Omani", DOB = new DateTime(1989, 3, 18) },
 
                 }
 
