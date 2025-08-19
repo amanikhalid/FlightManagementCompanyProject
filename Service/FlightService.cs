@@ -33,7 +33,10 @@ namespace FlightManagementCompanyProject.Service
 
         public FlightService(FlightDbContext context) // Constructor to initialize the service with the DbContext
         {
-        
+
+            _flightRepository = new FlightRepository(context); // Initialize flight repository
+
+
         }
 
     }
