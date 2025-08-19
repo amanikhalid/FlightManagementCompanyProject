@@ -111,6 +111,14 @@ namespace FlightManagementCompanyProject.Service
             {
                 var routes = new List<Route>
                 {
+                      new Route { DistanceKm = 870, OriginAirportId = 1, DestinationAirportId = 2 },  
+        new Route { DistanceKm = 200, OriginAirportId = 1, DestinationAirportId = 3 }, 
+        new Route { DistanceKm = 270, OriginAirportId = 1, DestinationAirportId = 4 },  
+        new Route { DistanceKm = 540, OriginAirportId = 1, DestinationAirportId = 5 },  
+        new Route { DistanceKm = 870, OriginAirportId = 2, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 200, OriginAirportId = 3, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 270, OriginAirportId = 4, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 540, OriginAirportId = 5, DestinationAirportId = 1 },  
                 
                 }
 
