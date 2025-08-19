@@ -19,6 +19,7 @@ namespace FlightManagementCompanyProject.Service
     public class FlightService
     {
         private readonly FlightRepository _flightRepository; // Repository for flight data access
+        private readonly AircraftRepository _aircraftRepository; // Repository for aircraft data access
 
     }
 }
