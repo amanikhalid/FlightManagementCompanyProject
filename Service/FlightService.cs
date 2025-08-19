@@ -77,10 +77,10 @@ namespace FlightManagementCompanyProject.Service
     new Aircraft { TailNumber = "TC-JRV", Model = "Airbus A321-200",       Capacity = 215 }, // Türkiye
     new Aircraft { TailNumber = "PK-LQG", Model = "Boeing 737 MAX 8",      Capacity = 174 }  // Indonesia
 };
-
-
-
-
+                foreach (var aircraft in aircrafts) // Iterate through each aircraft in the list
+                {
+                    _aircraftRepository.Add(aircraft);
+                }
 
             }
 
