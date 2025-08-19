@@ -123,7 +123,13 @@ namespace FlightManagementCompanyProject.Service
         new Route { DistanceKm = 430, OriginAirportId = 1, DestinationAirportId = 7 },  
         new Route { DistanceKm = 700, OriginAirportId = 1, DestinationAirportId = 8 },  
         new Route { DistanceKm = 850, OriginAirportId = 1, DestinationAirportId = 9 },  
-        new Route { DistanceKm = 1050,OriginAirportId = 1, DestinationAirportId = 10 }, 
+        new Route { DistanceKm = 1050,OriginAirportId = 1, DestinationAirportId = 10 },
+         new Route { DistanceKm = 340, OriginAirportId = 6, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 430, OriginAirportId = 7, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 700, OriginAirportId = 8, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 850, OriginAirportId = 9, DestinationAirportId = 1 },  
+        new Route { DistanceKm = 1050,OriginAirportId = 10,DestinationAirportId = 1 },  
+
                 }
 
 
