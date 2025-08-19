@@ -138,7 +138,7 @@ namespace FlightManagementCompanyProject.Service
             }
 
             // 4. Passenger data creation
-            if (!_passengerRepository.GetAll().Any()) 
+            if (!_passengerRepository.GetAll().Any())
             {
                 var passengers = new List<Passenger>
                 {
@@ -161,7 +161,7 @@ namespace FlightManagementCompanyProject.Service
         new Passenger { FullName = "Emily Johnson",          PassportNo = "US300017", Nationality = "American",DOB = new DateTime(1988, 9, 23) },
         new Passenger { FullName = "Rajesh Kumar",           PassportNo = "IN300018", Nationality = "Indian",  DOB = new DateTime(1978, 9, 3) },
         new Passenger { FullName = "Priya Singh",            PassportNo = "IN300019", Nationality = "Indian",  DOB = new DateTime(1995, 2, 25) },
-        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) } 
+        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) }
                 };
 
 
@@ -198,7 +198,16 @@ namespace FlightManagementCompanyProject.Service
                     new Booking { BookingRef = "BK0019", BookingDate = new DateTime(2025, 8, 28), Status = BookingStatus.Confirmed, PassengerId = 19 },
                     new Booking { BookingRef = "BK0020", BookingDate = new DateTime(2025, 8, 29), Status = BookingStatus.Cancelled, PassengerId = 20 }
                 };
-    }   }
+
+                foreach (var booking in bookings) // Iterate through each booking in the list
+                {
+                    _bookingRepository.Add(booking);
+                }
 
 
-} 
+            }
+        }
+
+
+    }
+}
