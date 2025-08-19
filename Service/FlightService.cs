@@ -22,6 +22,7 @@ namespace FlightManagementCompanyProject.Service
         private readonly AircraftRepository _aircraftRepository; // Repository for aircraft data access
         private readonly RouteRepository _routeRepository; // Repository for route data access
         private readonly TicketRepository _ticketRepository; // Repository for ticket data access
+        private readonly FlightCrewRepository _flightCrewRepository; // Repository for flight crew data access
 
     }
 }
