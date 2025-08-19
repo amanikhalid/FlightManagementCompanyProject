@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore; // Entity Framework Core for database opera
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets; // Networking utilities
 using System.Text;
 using System.Threading.Tasks;
 
