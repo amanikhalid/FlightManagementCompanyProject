@@ -2,6 +2,7 @@
 using FlightManagementCompany.DTO; // Data Transfer Objects for flight information
 using FlightManagementCompany.Models; // Models for flight entities
 using FlightManagementCompany.Repository; // Repository interfaces for data access
+using FlightManagementCompanyProject.Repository;
 using Microsoft.EntityFrameworkCore; // Entity Framework Core for database operations
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace FlightManagementCompanyProject.Service
 {
     public class FlightService
     {
-        
+        private readonly FlightRepository _flightRepository; // Repository for flight data access
+
     }
 }
