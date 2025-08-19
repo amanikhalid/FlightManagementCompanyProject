@@ -176,19 +176,28 @@ namespace FlightManagementCompanyProject.Service
             if (!_bookingRepository.GetAll().Any())
             {
                 var bookings = new List<Booking>
-    {
-        new Booking { BookingRef = "BK0001",  BookingDate = new DateTime(2025, 8, 10), Status = BookingStatus.Confirmed, PassengerId = 1 },
-        new Booking { BookingRef = "BK0002",  BookingDate = new DateTime(2025, 8, 11), Status = BookingStatus.Cancelled, PassengerId = 2 },
-        new Booking { BookingRef = "BK0003",  BookingDate = new DateTime(2025, 8, 12), Status = BookingStatus.Confirmed, PassengerId = 3 },
-        new Booking { BookingRef = "BK0004",  BookingDate = new DateTime(2025, 8, 13), Status = BookingStatus.Pending,   PassengerId = 4 },
-        new Booking { BookingRef = "BK0005",  BookingDate = new DateTime(2025, 8, 14), Status = BookingStatus.Confirmed, PassengerId = 5 },
-        new Booking { BookingRef = "BK0006",  BookingDate = new DateTime(2025, 8, 15), Status = BookingStatus.Cancelled, PassengerId = 6 },
-        new Booking { BookingRef = "BK0007",  BookingDate = new DateTime(2025, 8, 16), Status = BookingStatus.Confirmed, PassengerId = 7 },
-        new Booking { BookingRef = "BK0008",  BookingDate = new DateTime(2025, 8, 17), Status = BookingStatus.Pending,   PassengerId = 8 },
-        new Booking { BookingRef = "BK0009",  BookingDate = new DateTime(2025, 8, 18), Status = BookingStatus.Confirmed, PassengerId = 9 },
-        new Booking { BookingRef = "BK0010",  BookingDate = new DateTime(2025, 8, 19), Status = BookingStatus.Cancelled, PassengerId = 10 },
-
-
+                {
+                    new Booking { BookingRef = "BK0001", BookingDate = new DateTime(2025, 8, 10), Status = BookingStatus.Confirmed, PassengerId = 1 },
+                    new Booking { BookingRef = "BK0002", BookingDate = new DateTime(2025, 8, 11), Status = BookingStatus.Cancelled, PassengerId = 2 },
+                    new Booking { BookingRef = "BK0003", BookingDate = new DateTime(2025, 8, 12), Status = BookingStatus.Confirmed, PassengerId = 3 },
+                    new Booking { BookingRef = "BK0004", BookingDate = new DateTime(2025, 8, 13), Status = BookingStatus.Pending, PassengerId = 4 },
+                    new Booking { BookingRef = "BK0005", BookingDate = new DateTime(2025, 8, 14), Status = BookingStatus.Confirmed, PassengerId = 5 },
+                    new Booking { BookingRef = "BK0006", BookingDate = new DateTime(2025, 8, 15), Status = BookingStatus.Cancelled, PassengerId = 6 },
+                    new Booking { BookingRef = "BK0007", BookingDate = new DateTime(2025, 8, 16), Status = BookingStatus.Confirmed, PassengerId = 7 },
+                    new Booking { BookingRef = "BK0008", BookingDate = new DateTime(2025, 8, 17), Status = BookingStatus.Pending, PassengerId = 8 },
+                    new Booking { BookingRef = "BK0009", BookingDate = new DateTime(2025, 8, 18), Status = BookingStatus.Confirmed, PassengerId = 9 },
+                    new Booking { BookingRef = "BK0010", BookingDate = new DateTime(2025, 8, 19), Status = BookingStatus.Cancelled, PassengerId = 10 },
+                    new Booking { BookingRef = "BK0011", BookingDate = new DateTime(2025, 8, 20), Status = BookingStatus.Confirmed, PassengerId = 11 },
+                    new Booking { BookingRef = "BK0012", BookingDate = new DateTime(2025, 8, 21), Status = BookingStatus.Confirmed, PassengerId = 12 },
+                    new Booking { BookingRef = "BK0013", BookingDate = new DateTime(2025, 8, 22), Status = BookingStatus.Pending, PassengerId = 13 },
+                    new Booking { BookingRef = "BK0014", BookingDate = new DateTime(2025, 8, 23), Status = BookingStatus.Confirmed, PassengerId = 14 },
+                    new Booking { BookingRef = "BK0015", BookingDate = new DateTime(2025, 8, 24), Status = BookingStatus.Cancelled, PassengerId = 15 },
+                    new Booking { BookingRef = "BK0016", BookingDate = new DateTime(2025, 8, 25), Status = BookingStatus.Confirmed, PassengerId = 16 },
+                    new Booking { BookingRef = "BK0017", BookingDate = new DateTime(2025, 8, 26), Status = BookingStatus.Confirmed, PassengerId = 17 },
+                    new Booking { BookingRef = "BK0018", BookingDate = new DateTime(2025, 8, 27), Status = BookingStatus.Pending, PassengerId = 18 },
+                    new Booking { BookingRef = "BK0019", BookingDate = new DateTime(2025, 8, 28), Status = BookingStatus.Confirmed, PassengerId = 19 },
+                    new Booking { BookingRef = "BK0020", BookingDate = new DateTime(2025, 8, 29), Status = BookingStatus.Cancelled, PassengerId = 20 }
+                };
     }   }
 
 
