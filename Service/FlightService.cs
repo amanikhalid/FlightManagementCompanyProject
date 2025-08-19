@@ -49,8 +49,14 @@ namespace FlightManagementCompanyProject.Service
         }
 
         public void CreateSampleData() // Method to create sample data for testing or demonstration purposes
-        { 
+        {
+            if (!_aircraftRepository.GetAll().Any()) // Check if there are no aircraft records in the database
+     
+            { 
 
+            }
+
+           
         }
 
        
