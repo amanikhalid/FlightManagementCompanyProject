@@ -3,6 +3,7 @@ using FlightManagementCompany.DTO; // Data Transfer Objects for flight informati
 using FlightManagementCompany.Models; // Models for flight entities
 using FlightManagementCompany.Repository; // Repository interfaces for data access
 using FlightManagementCompanyProject.Data;
+using FlightManagementCompanyProject.Models;
 using FlightManagementCompanyProject.Repository;
 using Microsoft.EntityFrameworkCore; // Entity Framework Core for database operations
 using System;
@@ -51,13 +52,21 @@ namespace FlightManagementCompanyProject.Service
         public void CreateSampleData() // Method to create sample data for testing or demonstration purposes
         {
             if (!_aircraftRepository.GetAll().Any()) // Check if there are no aircraft records in the database
-     
-            { 
 
-            }
+            {
+                var aircrafts = new List<Aircraft>
+                {
+                      new Aircraft { TailNumber = "A4O-BA", Model = "Boeing 737-800",        Capacity = 162 },
+    new Aircraft { TailNumber = "A4O-BB", Model = "Boeing 737 MAX 8",      Capacity = 174 },
+    new Aircraft { TailNumber = "A4O-CA", Model = "Boeing 787-9",          Capacity = 296 },
+    new Aircraft { TailNumber = "A4O-CB", Model = "Airbus A330-300",       Capacity = 277 },
+    new Aircraft { TailNumber = "A4O-CC", Model = "Airbus A320-200",       Capacity = 180 },
 
-           
-        }
+                }
+
+
+
+        }   }  
 
        
     }
