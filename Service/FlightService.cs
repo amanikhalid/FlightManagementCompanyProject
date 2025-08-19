@@ -64,6 +64,13 @@ namespace FlightManagementCompanyProject.Service
       new Aircraft { TailNumber = "A6-EA",  Model = "Airbus A380-800",       Capacity = 517 },
     new Aircraft { TailNumber = "A6-EB",  Model = "Boeing 777-300ER",      Capacity = 360 },
     new Aircraft { TailNumber = "A6-EC",  Model = "Airbus A321neo",        Capacity = 200 },
+      new Aircraft { TailNumber = "A7-AL",  Model = "Airbus A350-900",       Capacity = 325 },
+    new Aircraft { TailNumber = "A7-BD",  Model = "Boeing 787-8",          Capacity = 242 },
+
+
+
+
+
                 }
 
 
