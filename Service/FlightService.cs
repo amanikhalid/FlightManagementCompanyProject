@@ -94,8 +94,14 @@ namespace FlightManagementCompanyProject.Service
         new Airport { IATA = "OHS", Name = "Sohar Airport",                   City = "Sohar",   Country = "Oman",                 TimeZone = "Asia/Muscat" },
         new Airport { IATA = "KHS", Name = "Khasab Airport",                  City = "Khasab",  Country = "Oman",                 TimeZone = "Asia/Muscat" },
         new Airport { IATA = "DQM", Name = "Duqm International Airport",      City = "Duqm",    Country = "Oman",                 TimeZone = "Asia/Muscat" },
+          new Airport { IATA = "DXB", Name = "Dubai International Airport",     City = "Dubai",   Country = "United Arab Emirates", TimeZone = "Asia/Dubai" },
+        new Airport { IATA = "AUH", Name = "Abu Dhabi International Airport", City = "Abu Dhabi", Country = "United Arab Emirates", TimeZone = "Asia/Dubai" },
+        new Airport { IATA = "DOH", Name = "Hamad International Airport",     City = "Doha",    Country = "Qatar",                TimeZone = "Asia/Qatar" },
+        new Airport { IATA = "BAH", Name = "Bahrain International Airport",   City = "Manama",  Country = "Bahrain",              TimeZone = "Asia/Bahrain" },
+        new Airport { IATA = "RUH", Name = "King Khalid International",       City = "Riyadh",  Country = "Saudi Arabia",         TimeZone = "Asia/Riyadh" }
+    };
 
-                }
+            }
 
 
 
