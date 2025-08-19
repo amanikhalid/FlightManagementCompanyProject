@@ -1,6 +1,7 @@
 ﻿using FlightManagementCompany.Data; // FlightManagementCompany.Data namespace for DbContext
 using FlightManagementCompany.DTO; // Data Transfer Objects for flight information
 using FlightManagementCompany.Models; // Models for flight entities
+using FlightManagementCompany.Repository; // Repository interfaces for data access
 using System;
 using System.Collections.Generic;
 using System.Linq;
