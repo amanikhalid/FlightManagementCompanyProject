@@ -43,7 +43,7 @@ namespace FlightManagementCompanyProject.Service
             _aircraftMaintenanceRepository = new AircraftMaintenanceRepository(context); // Initialize aircraft maintenance repository
             _airportRepository = new AirportRepository(context); // Initialize airport repository
             _passengerRepository = new PassengerRepository(context); // Initialize passenger repository
-
+            _bookingRepository = new BookingRepository(context); // Initialize booking repository
 
 
         }
