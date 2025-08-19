@@ -101,6 +101,9 @@ namespace FlightManagementCompanyProject.Service
         new Airport { IATA = "RUH", Name = "King Khalid International",       City = "Riyadh",  Country = "Saudi Arabia",         TimeZone = "Asia/Riyadh" }
     };
 
+                foreach (var ap in airports) // Iterate through each airport in the list
+                    _airportRepository.Add(ap);
+
             }
 
 
