@@ -172,6 +172,22 @@ namespace FlightManagementCompanyProject.Service
 
             }
 
+            // 5. Booking data creation
+            if (!_bookingRepository.GetAll().Any())
+            {
+                var bookings = new List<Booking>
+    {
+        new Booking { BookingRef = "BK0001",  BookingDate = new DateTime(2025, 8, 10), Status = BookingStatus.Confirmed, PassengerId = 1 },
+        new Booking { BookingRef = "BK0002",  BookingDate = new DateTime(2025, 8, 11), Status = BookingStatus.Cancelled, PassengerId = 2 },
+        new Booking { BookingRef = "BK0003",  BookingDate = new DateTime(2025, 8, 12), Status = BookingStatus.Confirmed, PassengerId = 3 },
+        new Booking { BookingRef = "BK0004",  BookingDate = new DateTime(2025, 8, 13), Status = BookingStatus.Pending,   PassengerId = 4 },
+        new Booking { BookingRef = "BK0005",  BookingDate = new DateTime(2025, 8, 14), Status = BookingStatus.Confirmed, PassengerId = 5 },
+        new Booking { BookingRef = "BK0006",  BookingDate = new DateTime(2025, 8, 15), Status = BookingStatus.Cancelled, PassengerId = 6 },
+        new Booking { BookingRef = "BK0007",  BookingDate = new DateTime(2025, 8, 16), Status = BookingStatus.Confirmed, PassengerId = 7 },
+        new Booking { BookingRef = "BK0008",  BookingDate = new DateTime(2025, 8, 17), Status = BookingStatus.Pending,   PassengerId = 8 },
+        new Booking { BookingRef = "BK0009",  BookingDate = new DateTime(2025, 8, 18), Status = BookingStatus.Confirmed, PassengerId = 9 },
+        new Booking { BookingRef = "BK0010",  BookingDate = new DateTime(2025, 8, 19), Status = BookingStatus.Cancelled, PassengerId = 10 },
+
 
     }   }
 
