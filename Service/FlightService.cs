@@ -68,6 +68,8 @@ namespace FlightManagementCompanyProject.Service
     new Aircraft { TailNumber = "A7-BD",  Model = "Boeing 787-8",          Capacity = 242 },
       new Aircraft { TailNumber = "A9C-AD", Model = "Airbus A321-200",       Capacity = 220 },
     new Aircraft { TailNumber = "A9C-AE", Model = "Airbus A320neo",        Capacity = 186 },
+      new Aircraft { TailNumber = "HZ-AK",  Model = "Boeing 787-10",         Capacity = 318 },
+    new Aircraft { TailNumber = "HZ-AQ",  Model = "Airbus A320-200",       Capacity = 180 },
 
 
 
