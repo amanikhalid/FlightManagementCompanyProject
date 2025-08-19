@@ -26,6 +26,7 @@ namespace FlightManagementCompanyProject.Service
         private readonly CrewMemberRepository _flightCrewMemberRepository; // Repository for flight crew member data access
         private readonly AircraftMaintenanceRepository _aircraftMaintenanceRepository; // Repository for aircraft maintenance data access
         private readonly AirportRepository _airportRepository; // Repository for airport data access
+        private readonly PassengerRepository _passengerRepository; // Repository for passenger data access
 
     }
 }
