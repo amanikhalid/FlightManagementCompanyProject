@@ -2,6 +2,7 @@
 using FlightManagementCompany.DTO; // Data Transfer Objects for flight information
 using FlightManagementCompany.Models; // Models for flight entities
 using FlightManagementCompany.Repository; // Repository interfaces for data access
+using FlightManagementCompanyProject.Data;
 using FlightManagementCompanyProject.Repository;
 using Microsoft.EntityFrameworkCore; // Entity Framework Core for database operations
 using System;
@@ -29,6 +30,11 @@ namespace FlightManagementCompanyProject.Service
         private readonly PassengerRepository _passengerRepository; // Repository for passenger data access
         private readonly BookingRepository _bookingRepository; // Repository for booking data access
         private readonly BaggageRepository _baggageRepository; // Repository for baggage data access
+
+        public FlightService(FlightDbContext context) // Constructor to initialize the service with the DbContext
+        {
+        
+        }
 
     }
 }
