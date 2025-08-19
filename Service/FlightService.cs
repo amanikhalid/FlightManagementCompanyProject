@@ -84,9 +84,17 @@ namespace FlightManagementCompanyProject.Service
 
             }
 
+            // 2. Airport data creation
+            if (!_airportRepository.GetAll().Any())
+            {
+                var airports = new List<Airport>
+                {
+
+                }
 
 
-        }   }  
 
-       
-    }
+        } }
+
+
+    } }
