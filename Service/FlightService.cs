@@ -54,7 +54,7 @@ namespace FlightManagementCompanyProject.Service
             if (!_aircraftRepository.GetAll().Any()) // Check if there are no aircraft records in the database
 
             {
-                var aircrafts = new List<Aircraft>
+                var aircrafts = new List<Aircraft> // 
                 {
                       new Aircraft { TailNumber = "A4O-BA", Model = "Boeing 737-800",        Capacity = 162 },
     new Aircraft { TailNumber = "A4O-BB", Model = "Boeing 737 MAX 8",      Capacity = 174 },
@@ -70,13 +70,19 @@ namespace FlightManagementCompanyProject.Service
     new Aircraft { TailNumber = "A9C-AE", Model = "Airbus A320neo",        Capacity = 186 },
       new Aircraft { TailNumber = "HZ-AK",  Model = "Boeing 787-10",         Capacity = 318 },
     new Aircraft { TailNumber = "HZ-AQ",  Model = "Airbus A320-200",       Capacity = 180 },
+      new Aircraft { TailNumber = "VT-ANP", Model = "Airbus A320-200",       Capacity = 180 }, // India
+    new Aircraft { TailNumber = "9V-SME", Model = "Airbus A350-900",       Capacity = 319 }, // Singapore
+    new Aircraft { TailNumber = "G-ZBJD", Model = "Boeing 787-8",          Capacity = 248 }, // UK
+    new Aircraft { TailNumber = "CN-RGA", Model = "Boeing 737-800",        Capacity = 162 }, // Morocco
+    new Aircraft { TailNumber = "TC-JRV", Model = "Airbus A321-200",       Capacity = 215 }, // Türkiye
+    new Aircraft { TailNumber = "PK-LQG", Model = "Boeing 737 MAX 8",      Capacity = 174 }  // Indonesia
+};
 
 
 
 
 
-
-                }
+            }
 
 
 
@@ -84,4 +90,3 @@ namespace FlightManagementCompanyProject.Service
 
        
     }
-}
