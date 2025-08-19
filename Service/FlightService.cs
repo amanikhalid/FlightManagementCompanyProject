@@ -11,6 +11,7 @@ using System.Reflection.Metadata.Ecma335; // Metadata for ECMA-335
 using System.Runtime.Intrinsics.X86; // Intrinsics for x86 architecture
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema; // XML Schema definitions
 
 namespace FlightManagementCompanyProject.Service
 {
