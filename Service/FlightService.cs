@@ -143,26 +143,26 @@ namespace FlightManagementCompanyProject.Service
                 var passengers = new List<Passenger>
                 {
                       new Passenger { FullName = "Salim Al‑Salami",        PassportNo = "OM100001", Nationality = "Omani", DOB = new DateTime(1990, 1, 1) },
-        new Passenger { FullName = "Ali Al‑Sinani",          PassportNo = "OM100002", Nationality = "Omani", DOB = new DateTime(1992, 2, 2) },
-        new Passenger { FullName = "Fatima Al‑Habsi",        PassportNo = "OM100003", Nationality = "Omani", DOB = new DateTime(1995, 3, 3) },
-        new Passenger { FullName = "Mohammed Al‑Balushi",    PassportNo = "OM100004", Nationality = "Omani", DOB = new DateTime(1988, 4, 4) },
-        new Passenger { FullName = "Aisha Al‑Harthy",        PassportNo = "OM100005", Nationality = "Omani", DOB = new DateTime(1993, 5, 5) },
-        new Passenger { FullName = "Othman Al‑Sinani",       PassportNo = "OM100006", Nationality = "Omani", DOB = new DateTime(1990, 7, 31) },
-        new Passenger { FullName = "Nadia Al‑Rawahi",        PassportNo = "OM100007", Nationality = "Omani", DOB = new DateTime(1986, 10, 1) },
-        new Passenger { FullName = "Layla Al‑Zadjali",       PassportNo = "OM100008", Nationality = "Omani", DOB = new DateTime(1996, 8, 25) },
-        new Passenger { FullName = "Huda Al‑Shibli",         PassportNo = "OM100009", Nationality = "Omani", DOB = new DateTime(1998, 3, 22) },
-        new Passenger { FullName = "Yousuf Al‑Hinai",        PassportNo = "OM100010", Nationality = "Omani", DOB = new DateTime(1989, 3, 18) },
-          new Passenger { FullName = "Fahad Al‑Mutairi",       PassportNo = "SA200011", Nationality = "Saudi",   DOB = new DateTime(1986, 9, 14) },
-        new Passenger { FullName = "Hamad Al‑Marri",         PassportNo = "QA200012", Nationality = "Qatari",  DOB = new DateTime(1990, 8, 19) },
-        new Passenger { FullName = "Khalifa Al‑Mazrouei",    PassportNo = "AE200013", Nationality = "Emirati", DOB = new DateTime(1985, 12, 4) },
-        new Passenger { FullName = "Maryam Al‑Khalifa",      PassportNo = "BH200014", Nationality = "Bahraini",DOB = new DateTime(1994, 2, 27) },
-        new Passenger { FullName = "Saad Al‑Otaibi",         PassportNo = "SA200015", Nationality = "Saudi",   DOB = new DateTime(1979, 1, 29) },
-          new Passenger { FullName = "John Smith",             PassportNo = "GB300016", Nationality = "British", DOB = new DateTime(1974, 5, 15) },
-        new Passenger { FullName = "Emily Johnson",          PassportNo = "US300017", Nationality = "American",DOB = new DateTime(1988, 9, 23) },
-        new Passenger { FullName = "Rajesh Kumar",           PassportNo = "IN300018", Nationality = "Indian",  DOB = new DateTime(1978, 9, 3) },
-        new Passenger { FullName = "Priya Singh",            PassportNo = "IN300019", Nationality = "Indian",  DOB = new DateTime(1995, 2, 25) },
-        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) }
-                };
+                        new Passenger { FullName = "Ali Al‑Sinani",          PassportNo = "OM100002", Nationality = "Omani", DOB = new DateTime(1992, 2, 2) },
+                        new Passenger { FullName = "Fatima Al‑Habsi",        PassportNo = "OM100003", Nationality = "Omani", DOB = new DateTime(1995, 3, 3) },
+                        new Passenger { FullName = "Mohammed Al‑Balushi",    PassportNo = "OM100004", Nationality = "Omani", DOB = new DateTime(1988, 4, 4) },
+                        new Passenger { FullName = "Aisha Al‑Harthy",        PassportNo = "OM100005", Nationality = "Omani", DOB = new DateTime(1993, 5, 5) },
+                        new Passenger { FullName = "Othman Al‑Sinani",       PassportNo = "OM100006", Nationality = "Omani", DOB = new DateTime(1990, 7, 31) },
+                        new Passenger { FullName = "Nadia Al‑Rawahi",        PassportNo = "OM100007", Nationality = "Omani", DOB = new DateTime(1986, 10, 1) },
+                        new Passenger { FullName = "Layla Al‑Zadjali",       PassportNo = "OM100008", Nationality = "Omani", DOB = new DateTime(1996, 8, 25) },
+                        new Passenger { FullName = "Huda Al‑Shibli",         PassportNo = "OM100009", Nationality = "Omani", DOB = new DateTime(1998, 3, 22) },
+                        new Passenger { FullName = "Yousuf Al‑Hinai",        PassportNo = "OM100010", Nationality = "Omani", DOB = new DateTime(1989, 3, 18) },
+                          new Passenger { FullName = "Fahad Al‑Mutairi",       PassportNo = "SA200011", Nationality = "Saudi",   DOB = new DateTime(1986, 9, 14) },
+                        new Passenger { FullName = "Hamad Al‑Marri",         PassportNo = "QA200012", Nationality = "Qatari",  DOB = new DateTime(1990, 8, 19) },
+                        new Passenger { FullName = "Khalifa Al‑Mazrouei",    PassportNo = "AE200013", Nationality = "Emirati", DOB = new DateTime(1985, 12, 4) },
+                        new Passenger { FullName = "Maryam Al‑Khalifa",      PassportNo = "BH200014", Nationality = "Bahraini",DOB = new DateTime(1994, 2, 27) },
+                        new Passenger { FullName = "Saad Al‑Otaibi",         PassportNo = "SA200015", Nationality = "Saudi",   DOB = new DateTime(1979, 1, 29) },
+                          new Passenger { FullName = "John Smith",             PassportNo = "GB300016", Nationality = "British", DOB = new DateTime(1974, 5, 15) },
+                        new Passenger { FullName = "Emily Johnson",          PassportNo = "US300017", Nationality = "American",DOB = new DateTime(1988, 9, 23) },
+                        new Passenger { FullName = "Rajesh Kumar",           PassportNo = "IN300018", Nationality = "Indian",  DOB = new DateTime(1978, 9, 3) },
+                        new Passenger { FullName = "Priya Singh",            PassportNo = "IN300019", Nationality = "Indian",  DOB = new DateTime(1995, 2, 25) },
+                        new Passenger { FullName = "Hiroshi Tanaka",         PassportNo = "JP300020", Nationality = "Japanese",DOB = new DateTime(1975, 12, 5) }
+                                };
 
 
                 foreach (var passenger in passengers) // Iterate through each passenger in the list
@@ -208,22 +208,26 @@ namespace FlightManagementCompanyProject.Service
             }
 
             // 6. Aircraft Maintenance data creation
-            if (!_aircraftMaintenanceRepository.GetAll().Any())
-            {
-                new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 05), Type = "A-Check", Notes = "Line check at MCT; no findings.", AircraftId = 1 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 07), Type = "Engine Inspection", Notes = "Boroscope on #2; within limits.", AircraftId = 2 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 09), Type = "Cabin Refurbishment", Notes = "Seat covers replaced; LED strip fix.", AircraftId = 3 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 10), Type = "Landing Gear Service", Notes = "Nose gear bushings changed.", AircraftId = 4 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 12), Type = "Hydraulic System Check", Notes = "Reservoir topped; minor seepage monitored.", AircraftId = 5 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 14), Type = "Software Update", Notes = "FMS DB + navdata updated to AIRAC 2508.", AircraftId = 6 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 16), Type = "Brake Replacement", Notes = "Main gear brakes replaced (2 wheels).", AircraftId = 7 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 18), Type = "Fuel System Inspection", Notes = "Filter change; leak check OK.", AircraftId = 8 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 21), Type = "Oxygen System Service", Notes = "Crew O2 bottles serviced; regulator test passed.", AircraftId = 9 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 23), Type = "IFE Upgrade", Notes = "Content refresh + minor screen swaps at DOH.", AircraftId = 10 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 26), Type = "Wing Inspection", Notes = "NDT on upper skin panels; no cracks detected.", AircraftId = 11 }, 
-        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 29), Type = "Pitot-Static Test", Notes = "Alt/AS checks within tolerance; cert issued.", AircraftId = 12 }
-        }; 
-    }
+            //if (!_aircraftMaintenanceRepository.GetAll().Any())
+            //{
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 05), Type = "A-Check", Notes = "Line check at MCT; no findings.", AircraftId = 1 },
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 07), Type = "Engine Inspection", Notes = "Boroscope on #2; within limits.", AircraftId = 2 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 09), Type = "Cabin Refurbishment", Notes = "Seat covers replaced; LED strip fix.", AircraftId = 3 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 10), Type = "Landing Gear Service", Notes = "Nose gear bushings changed.", AircraftId = 4 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 12), Type = "Hydraulic System Check", Notes = "Reservoir topped; minor seepage monitored.", AircraftId = 5 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 14), Type = "Software Update", Notes = "FMS DB + navdata updated to AIRAC 2508.", AircraftId = 6 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 16), Type = "Brake Replacement", Notes = "Main gear brakes replaced (2 wheels).", AircraftId = 7 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 18), Type = "Fuel System Inspection", Notes = "Filter change; leak check OK.", AircraftId = 8 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 21), Type = "Oxygen System Service", Notes = "Crew O2 bottles serviced; regulator test passed.", AircraftId = 9 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 23), Type = "IFE Upgrade", Notes = "Content refresh + minor screen swaps at DOH.", AircraftId = 10 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 26), Type = "Wing Inspection", Notes = "NDT on upper skin panels; no cracks detected.", AircraftId = 11 }, 
+            //    new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 29), Type = "Pitot-Static Test", Notes = "Alt/AS checks within tolerance; cert issued.", AircraftId = 12 }            }
+            //;
+            //foreach (var maintenance in AircraftMaintenances)
+            //{
+            //    _aircraftMaintenanceRepository.Add(maintenance);
+            //}
+        }
             
 
 
