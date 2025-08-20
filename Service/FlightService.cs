@@ -209,11 +209,27 @@ namespace FlightManagementCompanyProject.Service
 
             // 6. Aircraft Maintenance data creation
             if (!_aircraftMaintenanceRepository.GetAll().Any())
-            { 
+            {
+                new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 05), Type = "A-Check", Notes = "Line check at MCT; no findings.", AircraftId = 1 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 07), Type = "Engine Inspection", Notes = "Boroscope on #2; within limits.", AircraftId = 2 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 09), Type = "Cabin Refurbishment", Notes = "Seat covers replaced; LED strip fix.", AircraftId = 3 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 10), Type = "Landing Gear Service", Notes = "Nose gear bushings changed.", AircraftId = 4 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 12), Type = "Hydraulic System Check", Notes = "Reservoir topped; minor seepage monitored.", AircraftId = 5 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 14), Type = "Software Update", Notes = "FMS DB + navdata updated to AIRAC 2508.", AircraftId = 6 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 16), Type = "Brake Replacement", Notes = "Main gear brakes replaced (2 wheels).", AircraftId = 7 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 18), Type = "Fuel System Inspection", Notes = "Filter change; leak check OK.", AircraftId = 8 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 21), Type = "Oxygen System Service", Notes = "Crew O2 bottles serviced; regulator test passed.", AircraftId = 9 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 23), Type = "IFE Upgrade", Notes = "Content refresh + minor screen swaps at DOH.", AircraftId = 10 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 26), Type = "Wing Inspection", Notes = "NDT on upper skin panels; no cracks detected.", AircraftId = 11 }, 
+        new AircraftMaintenance { MaintenanceDate = new DateTime(2025, 8, 29), Type = "Pitot-Static Test", Notes = "Alt/AS checks within tolerance; cert issued.", AircraftId = 12 }
+        }; 
+    }
             
-            }
-        }
 
 
     }
 }
+
+
+    
+
