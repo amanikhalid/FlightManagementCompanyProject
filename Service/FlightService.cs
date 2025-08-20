@@ -206,6 +206,12 @@ namespace FlightManagementCompanyProject.Service
 
 
             }
+
+            // 6. Aircraft Maintenance data creation
+            if (!_aircraftMaintenanceRepository.GetAll().Any())
+            { 
+            
+            }
         }
 
 
